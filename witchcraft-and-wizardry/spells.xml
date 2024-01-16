@@ -124,7 +124,7 @@
 		</description>
 		<setters>
 			<set name="keywords"></set>
-			<set name="level">0</set>
+			<set name="level">1</set>
 			<set name="school">Transmutation</set>
 			<set name="time">1 minute</set>
 			<set name="duration">Instantaneous</set>
@@ -168,7 +168,7 @@
 		</description>
 		<setters>
 			<set name="keywords"></set>
-			<set name="level">0</set>
+			<set name="level">1</set>
 			<set name="school">Transmutation</set>
 			<set name="time">1 action</set>
 			<set name="duration">Instantaneous</set>
@@ -189,7 +189,7 @@
 		</description>
 		<setters>
 			<set name="keywords"></set>
-			<set name="level">0</set>
+			<set name="level">1</set>
 			<set name="school">Transmutation</set>
 			<set name="time">1 action</set>
 			<set name="duration">Instantaneous</set>
@@ -211,7 +211,7 @@
 		</description>
 		<setters>
 			<set name="keywords"></set>
-			<set name="level">0</set>
+			<set name="level">1</set>
 			<set name="school">Conjuration</set>
 			<set name="time">1 action</set>
 			<set name="duration">Concentration, up to 1 minute</set>
