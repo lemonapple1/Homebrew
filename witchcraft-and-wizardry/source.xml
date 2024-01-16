@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/source.xml" />
+		</update>
+	</info>
+	<element name="Witchcraft and Wizardry" type="Source" source="Core" id="ID_HOMEBREW_SOURCE_WITCHCRAFT_AND_WIZARDRY">
+		<description>
+			<![CDATA[<p></p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">WAW</set>
+			<set name="url">https://github.com/lemonapple1/Homebrew</set>
+			<set name="author" url="https://github.com/lemonapple1/Homebrew">Lemonapple</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>
