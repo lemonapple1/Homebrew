@@ -8,5 +8,6 @@
 	</info>
 	<files>
 		<file name="source.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/source.xml" />		
+		<file name="spells.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/spells.xml" />		
 	</files>
 </index>

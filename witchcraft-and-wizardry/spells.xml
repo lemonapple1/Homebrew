@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Witchcraft and Wizardry: Magic</name>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/spells.xml" />
+		</update>
+	</info>
+
+	<!-- First Year Charms -->
+	<element name="Levitation Charm (Wingardium Leviosa)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_LEVITATION_CHARM">
+		<supports>Wizard</supports>
+		<description>
+			<p>One small creature or loose object of your choice that you can see within range rises vertically, up to 15 feet, and remains suspended there for the duration. The spell can levitate a target that weighs up to 100 pounds. An unwilling creature that succeeds on a Constitution saving throw is unaffected. The target can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing. You can change the target’s altitude by 5 feet in either direction on your turn. If you are the target, you can't move up or down as part of your move, only 5 feet horizontally. Otherwise, you can use your action to move the target, which must remain within the spell’s range. When the spell ends, the target falls to the ground if it is still aloft. The creature then must succeed on an Dexterity saving throw or it will land prone regardless of whether it avoids damage from the fall.</p>
+			<p class="indent"><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 1st level or higher, the weight limit is increased by 150 pounds and range increased by 10 feet for each slot level above 0, and is no longer limited to small creatures.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 2 minutes</set>
+			<set name="range">20 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Wand-Lighting Charm (Lumos/Nox)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_LUMOS">
+		<supports>Wizard</supports>
+		<description>
+			<p>Upon muttering the incantation, the tip of your wand sheds bright light in a narrow 15-foot cone and dim light for an additional 15 feet, much like a flashlight. The light is a bright white with a slight bluish tint. Completely covering the tip of your wand with something opaque blocks the light.</p>
+			<p class="indent">The spell ends if you dismiss it with the nox incantation, as a bonus action.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Until dispelled</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Softening Charm (Spongify)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_LUMOS">
+		<supports>Wizard</supports>
+		<description>
+			<p>This spell makes an object you can see within range become soft and bouncy, like a sponge or mattress. Any damage from falling on or colliding with this object is nullified. This spell can be cast as a reaction to a collision affecting a creature or two objects you can see within range.</p>
+			<p class="indent">The spell's range is increased by 10 feet for each level after 1st, stopping at level 4 (60 ft).</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action or reaction, when a collision occurs within the spell's range</set>
+			<set name="duration">1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Unlocking Charm (Alohomora)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_ALOHOMORA">
+		<supports>Wizard</supports>
+		<description>
+			<p>Choose an object that you can see within range. The object can be a door, a box, a chest, a set of manacles, a padlock, or another object that requires a key to be accessed.</p>
+			<p class="indent">If the object has multiple locks, only one of them is unlocked.</p>
+			<p class="indent">If you choose a target that is held shut with Colloportus, that spell is suppressed for 10 minutes, during which time the target can be opened and shut normally.</p>
+			<p class="indent">When you cast the spell, a loud clicking of pins emanates from the lock, this sound is audible from as far away as 100 feet from the target object.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">40 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Locking Charm (Colloportus)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_COLLOPORTUS">
+		<supports>Wizard</supports>
+		<description>
+			<p>You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. It is impassable until it is broken or the spell is dispelled or suppressed. Casting Alohomora on the object suppresses spell for 10 minutes.</p>
+			<p class="indent">While affected by this spell, the object is more difficult to break or force open; the DC to break it increases by 10.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Until dispelled</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Mending Charm (Reparo)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_MENDING_CHARM">
+		<supports>Wizard</supports>
+		<description>
+			<p>This spell magically reverses any damage done to any objects or structures within a 5-foot cube, collecting all the pieces or components and reassembling them. Anything previously contained by the broken target, like a spilled liquid, is not placed back inside it. Anything affected by the breaking of the target, like a person who fell through a broken platform, is not undone. There is no effect on anything within the area that's undamaged, nor on anything damaged by time or decay.</p>
+			<p>This spell can physically repair a magic item, but the spell can’t restore magic to such an object.</p>
+			<p class="indent"><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 3rd level or higher, the cube's size increases by 10 feet for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 minute</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Box-Blasting Charm (Cistem Aperio)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_CISTEM_APERIO">
+		<supports>Wizard</supports>
+		<description>
+			<p>Choose a box, chest, or another container that you can see within range that uses mundane or magical means to prevent access.</p>
+			<p class="indent">If the object has multiple locks, only one of them is unlocked.</p>
+			<p class="indent">If you choose a target that is held shut with Colloportus, that spell is suppressed for 10 minutes, during which time the target can be opened and shut normally.</p>
+			<p class="indent">When you cast the spell, a loud blast is created, the sound is audible from as far away as 200 feet from the target object.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">40 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Severing Charm (Diffindo)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_DIFFINDO">
+		<supports>Wizard</supports>
+		<description>
+			<p>An object is precisely torn or cut, as if a magical blade extended from the tip of your wand. Choose a target you can see within range that fits within a 5-foot cube. If the target is a creature, it must make a Dexterity saving throw. It takes 3d4 slashing damage on a failed save or half as much damage on a successful one. This is the counterspell to incarcerous, immediately ending that spell's effects.</p>
+			<p class="indent"><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature or the cube's size increases by 5 feet for each slot level above 1st. If targeting additional creatures, the targets must be within 5 feet of each other when you target them.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Knockback Jinx (Flipendo)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_FLIPENDO">
+		<supports>Wizard</supports>
+		<description>
+			<p>The spell throws a creature from its standing position to the ground with what feels like an invisible push. Choose a being you can see within range to make a Strength saving throw. On a failed save, a creature takes 1d10 bludgeoning damage, is knocked back a number of feet equal to five times your spellcasting ability modifier, and is knocked prone. On a successful save, the creature takes half as much damage, is knocked back 5 feet, and isn’t knocked prone.</p>
+			<p class="indent"><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 and the knockback on a failed save increases by 5 feet for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Fire-Making Spell (Incendio)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_INCENDIO">
+		<supports>Wizard</supports>
+		<description>
+			<p>You conjure a fire which shoots from you wand to a target you can see within range. Until the spells ends, the fire created fills a 5-foot cube. Any creature in the enchanted fire’s space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it enters the bonfire’s space for the first time on a turn or ends its turn there.</p>
+			<p class="indent">The bonfire ignites flammable objects in its area that aren’t being worn or carried.</p>
+			<p class="indent"><strong>At Higher Levels.</strong> When cast this spell from a spells slot of 2nd level or higher, the spell's damage increases by 2d6 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>
+
