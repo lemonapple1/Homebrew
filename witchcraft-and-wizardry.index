@@ -3,10 +3,10 @@
 	<info>
 		<name>Witchcraft and Wizardry</name>
 		<update version="0.0.1">
-			<file name="witchcraft-and-wizardry.index" url="https://github.com/lemonappl1/Homebrew/blob/main/witchcraft-and-wizardry.index" />
+			<file name="witchcraft-and-wizardry.index" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry.index" />
 		</update>
 	</info>
 	<files>
-		<file name="source.xml" url="https://github.com/lemonappl1/Homebrew/blob/main/witchcraft-and-wizardry/source.xml"" />		
+		<file name="source.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/source.xml" />		
 	</files>
 </index>
