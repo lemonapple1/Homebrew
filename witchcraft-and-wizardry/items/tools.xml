@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Witchcraft and Wizardry: Tools</name>
+		<update version="0.0.1">
+			<file name="tools.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/items/tools.xml" />
+		</update>
+	</info>
+	<element name="Astronomer's Tools" type="Item" source="Witchcraft and Wizardry" id="ID_WAW_TOOL_ASTRONOMERS_TOOLS">
+		<description>
+			<p>This tubular case contains a featherlight-charmed travel telescope, a sextant, an astro-compass, several star charts, spare parchment, ink and a quill.</p>
+			<h5>ASTRONOMER'S TOOLS</h5>
+			<table>
+				<thead>
+					<tr><td>Activity</td><td class="col-10">DC</td></tr>
+				</thead>
+				<tr><td>Identify a star</td><td>10</td></tr>
+				<tr><td>Identify a constellation</td><td>15</td></tr>
+				<tr><td>Create a map of the stars</td><td>20</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">23</set>
+			<set name="weight" lb="4">4 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_WAW_PROFICIENCY_TOOL_ASTRONOMERS_TOOLS</set>
+		</setters>
+	</element>
+	<element name="Tool Proficiency (Astronomer's Tools)" type="Proficiency" source="Witchcraft and Wizardry" id="ID_WAW_PROFICIENCY_TOOL_ASTRONOMERS_TOOLS">
+		<supports>Tool, Artisan tools</supports>
+		<description>
+			<p>Astronomer's tools include all the instruments necessary to study the stars. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to astronomy.</p>
+			<div class="reference">
+				<div element="ID_WAW_TOOL_ASTRONOMERS_TOOLS" />
+			</div>
+		</description>
+	</element>
+	<element name="Curse-Breaker's Tools" type="Item" source="Witchcraft and Wizardry" id="ID_WAW_TOOL_CURSE_BREAKERS_TOOLS">
+		<description>
+			<p>The Curse-Breaker's Tools include a curse sneakoscope, a compact secrecy sensor, an eye loupe set, a collapsible retriever tool with a hook on the end, a small mirror and a very large pair of tweezers. Proficiency with these tools lets you add your proficiency bonus to any ability check you make using finite incantatem or to remove a curse from an object or an area.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">45</set>
+			<set name="weight" lb="8">8 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_WAW_PROFICIENCY_TOOL_CURSE_BREAKERS_TOOLS</set>
+		</setters>
+	</element>
+	<element name="Tool Proficiency (Curse-Breaker's Tools)" type="Proficiency" source="Witchcraft and Wizardry" id="ID_WAW_PROFICIENCY_TOOL_CURSE_BREAKERS_TOOLS">
+		<supports>Tool, Artisan tools</supports>
+		<description>
+			<p>Curse-Breaker's Tools includes all the equipment needed to break curses from objects and areas. Proficiency with this kit lets you add your proficiency bonus to any ability check you make using finite incantatem or to remove a curse from an object or an area.</p>
+			<div class="reference">
+				<div element="ID_WAW_TOOL_CURSE_BREAKERS_TOOLS" />
+			</div>
+		</description>
+	</element>
+	<element name="Diviner's Kit" type="Item" source="Witchcraft and Wizardry" id="ID_WAW_TOOL_DIVINERS_KIT">
+		<description>
+			<p>The Diviner's Kit is a small carpet bag containing a wide range of divination equipment, including tea leaves, a tea cup and saucer, a travel tea pot, grindylow bones, rune inscribed sticks, a deck of tarot cards and a small crystal ball. Proficiency with this kit allows you to make more accurate predictions with your Divination Abilities. Divination Abilities cannot be performed without this kit.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">40</set>
+			<set name="weight" lb="8">8 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_WAW_PROFICIENCY_TOOL_DIVINERS_KIT</set>
+		</setters>
+	</element>
+	<element name="Tool Proficiency (Diviner's Kit)" type="Proficiency" source="Witchcraft and Wizardry" id="ID_WAW_PROFICIENCY_TOOL_DIVINERS_KIT">
+		<supports>Tool, Artisan tools</supports>
+		<description>
+			<p>Diviner's Kit include all the equipment needed to divine the future. Proficiency with this kit lets you add your proficiency bonus to any divination check you make.</p>
+			<div class="reference">
+				<div element="ID_WAW_TOOL_DIVINERS_KIT" />
+			</div>
+		</description>
+	</element>
+	<element name="Herbologist's Tools" type="Item" source="Witchcraft and Wizardry" id="ID_WAW_TOOL_HERBOLOGISTS_TOOLS">
+		<description>
+			<p>This set of tools includes a trowel, hand cultivator, pruning shears, dragon-hide gloves, twine, small burlap sacks, a few small pots and a pair of earmuffs.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">35</set>
+			<set name="weight" lb="10">10 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_WAW_PROFICIENCY_TOOL_HERBOLOGISTS_TOOLS</set>
+		</setters>
+	</element>
+	<element name="Tool Proficiency (Herbologist's Tools)" type="Proficiency" source="Witchcraft and Wizardry" id="ID_WAW_PROFICIENCY_TOOL_HERBOLOGISTS_TOOLS">
+		<supports>Tool, Artisan tools</supports>
+		<description>
+			<p>Herbologist's Tools will allow you to better harvest plants.</p>
+			<div class="reference">
+				<div element="ID_WAW_TOOL_HERBOLOGISTS_TOOLS" />
+			</div>
+		</description>
+	</element>
+
+	<element name="Potioneer's Kit" type="Item" source="Witchcraft and Wizardry" id="ID_WAW_TOOL_POTIONEERS_KIT">
+		<description>
+			<p>The Potioneer's Kit includes a set of brass scales, silver knife, cutting board, mortar and pestle, measuring cups, eye dropper and vials, jars and flasks, as well as some staple ingredients that aren't included in recipes.</p>
+			<h5>POTIONEER'S KIT</h5>
+			<table>
+				<thead>
+					<tr><td>Activity</td><td class="col-10">DC</td></tr>
+				</thead>
+				<tr><td>Identify whether a potion has good or bad effects</td><td>10</td></tr>
+				<tr><td>Deduce a potion's effects</td><td>15</td></tr>
+				<tr><td>Deconstruct potion recipe</td><td>20</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">40</set>
+			<set name="weight" lb="8">8 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_WAW_PROFICIENCY_TOOL_POTIONEERS_KIT</set>
+		</setters>
+	</element>
+	<element name="Tool Proficiency (Potioneer's Kit)" type="Proficiency" source="Witchcraft and Wizardry" id="ID_WAW_PROFICIENCY_TOOL_POTIONEERS_KIT">
+		<supports>Tool, Artisan tools</supports>
+		<description>
+			<p>Potioneer's Kit include all the equipment needed to create masterful potions. Proficiency with this kit lets you add your proficiency bonus to any potion creation.</p>
+			<div class="reference">
+				<div element="ID_WAW_TOOL_POTIONEERS_KIT" />
+			</div>
+		</description>
+	</element>
+</elements>

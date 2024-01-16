@@ -17,7 +17,7 @@
 		<setters>
 			<set name="keywords"></set>
 			<set name="level">0</set>
-			<set name="school">Transmutation</set>
+			<set name="school">Charm</set>
 			<set name="time">1 action</set>
 			<set name="duration">Concentration, up to 2 minutes</set>
 			<set name="range">20 feet</set>
@@ -38,7 +38,7 @@
 		<setters>
 			<set name="keywords"></set>
 			<set name="level">0</set>
-			<set name="school">Evocation</set>
+			<set name="school">Charm</set>
 			<set name="time">1 action</set>
 			<set name="duration">Until dispelled</set>
 			<set name="range">Self</set>
@@ -59,7 +59,7 @@
 		<setters>
 			<set name="keywords"></set>
 			<set name="level">0</set>
-			<set name="school">Transmutation</set>
+			<set name="school">Charm</set>
 			<set name="time">1 action or reaction, when a collision occurs within the spell's range</set>
 			<set name="duration">1 minute</set>
 			<set name="range">30 feet</set>
@@ -82,7 +82,7 @@
 		<setters>
 			<set name="keywords"></set>
 			<set name="level">0</set>
-			<set name="school">Transmutation</set>
+			<set name="school">Charm</set>
 			<set name="time">1 action</set>
 			<set name="duration">Instantaneous</set>
 			<set name="range">40 feet</set>
@@ -94,19 +94,19 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Locking Charm (Colloportus)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_COLLOPORTUS">
+	<element name="Locking Spell (Colloportus)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_COLLOPORTUS">
 		<supports>Wizard</supports>
 		<description>
-			<p>You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. It is impassable until it is broken or the spell is dispelled or suppressed. Casting Alohomora on the object suppresses spell for 10 minutes.</p>
+			<p>You can target a door, window, gate, chest, or other entryway within range, and it becomes locked for the duration. It is impassable until it is broken or the spell is dispelled or suppressed. Casting Alohomora on the object suppresses spell for 10 minutes.</p>
 			<p class="indent">While affected by this spell, the object is more difficult to break or force open; the DC to break it increases by 10.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
-			<set name="level">0</set>
-			<set name="school">Abjuration</set>
+			<set name="level">1</set>
+			<set name="school">Charm</set>
 			<set name="time">1 action</set>
 			<set name="duration">Until dispelled</set>
-			<set name="range">Touch</set>
+			<set name="range">30 feet</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
@@ -125,7 +125,7 @@
 		<setters>
 			<set name="keywords"></set>
 			<set name="level">1</set>
-			<set name="school">Transmutation</set>
+			<set name="school">Charm</set>
 			<set name="time">1 minute</set>
 			<set name="duration">Instantaneous</set>
 			<set name="range">Touch</set>
@@ -137,7 +137,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Box-Blasting Charm (Cistem Aperio)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_CISTEM_APERIO">
+	<element name="Box Blasting Charm (Cistem Aperio)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_CISTEM_APERIO">
 		<supports>Wizard</supports>
 		<description>
 			<p>Choose a box, chest, or another container that you can see within range that uses mundane or magical means to prevent access.</p>
@@ -148,7 +148,7 @@
 		<setters>
 			<set name="keywords"></set>
 			<set name="level">0</set>
-			<set name="school">Transmutation</set>
+			<set name="school">Charm</set>
 			<set name="time">1 action</set>
 			<set name="duration">Instantaneous</set>
 			<set name="range">40 feet</set>
@@ -169,7 +169,7 @@
 		<setters>
 			<set name="keywords"></set>
 			<set name="level">1</set>
-			<set name="school">Transmutation</set>
+			<set name="school">Charm</set>
 			<set name="time">1 action</set>
 			<set name="duration">Instantaneous</set>
 			<set name="range">30 feet</set>
@@ -190,7 +190,7 @@
 		<setters>
 			<set name="keywords"></set>
 			<set name="level">1</set>
-			<set name="school">Transmutation</set>
+			<set name="school">Jinx</set>
 			<set name="time">1 action</set>
 			<set name="duration">Instantaneous</set>
 			<set name="range">60 feet</set>
@@ -212,7 +212,7 @@
 		<setters>
 			<set name="keywords"></set>
 			<set name="level">1</set>
-			<set name="school">Conjuration</set>
+			<set name="school">Charm</set>
 			<set name="time">1 action</set>
 			<set name="duration">Concentration, up to 1 minute</set>
 			<set name="range">60 feet</set>
@@ -224,5 +224,6 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+	<!-- First Year Charms -->
 </elements>
 
