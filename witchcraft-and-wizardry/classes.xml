@@ -386,10 +386,10 @@
 			<div element="ID_WAW_CLASS_FEATURE_CASTER_INTELLECT_ARCANE_RECOVERY" />
 		</description>
 		<sheet display="false">
-			<description>A powerful specialist, with immense control over spells.</description>
+			<description>A versatile academic, with a solution for every problem.</description>
 		</sheet>
 		<setters>
-			<set name="short">A powerful specialist, with immense control over spells.</set>
+			<set name="short">A versatile academic, with a solution for every problem.</set>
 			<set name="hd">d6</set>
 		</setters>
 		<rules>

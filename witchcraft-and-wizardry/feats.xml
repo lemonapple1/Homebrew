@@ -8,8 +8,8 @@
 	</info>
 
 	<element name="Giant's Blood" type="Feat" source="Witchcraft and Wizardry" id="ID_WAW_FEAT_GIANTS_BLOOD">
-		<requirements>!ID_WAW_FEAT_GOBLIN_CUNNING,!ID_WAW_FEAT_METAMORPH_MAGIC,!ID_WAW_FEAT_PARSELTONGUE,!ID_WAW_FEAT_VEELA_CHARM</requirements>
-		<prerequisite>Only First Feat</prerequisite>
+		<requirements>!ID_WAW_FEAT_GOBLIN_CUNNING,!ID_WAW_FEAT_METAMORPH_MAGIC,!ID_WAW_FEAT_PARSELTONGUE,!ID_WAW_FEAT_VEELA_CHARM,ID_WAW_HOUSE_FEAT</requirements>
+		<prerequisite>Only Hogwarts House Feat</prerequisite>
 		<description>
 			<p>Even though they are few and far between, it's hard for half-giants and part-giants to hide their genealogy; they tend to turn heads wherever they go. With a broad build, impressive strength and a genetic resistance to magic, wizards with giant blood are powerful allies.</p>
 			<ul>
@@ -29,8 +29,8 @@
 		</rules>
 	</element>
 	<element name="Goblin Cunning" type="Feat" source="Witchcraft and Wizardry" id="ID_WAW_FEAT_GOBLIN_CUNNING">
-		<requirements>!ID_WAW_FEAT_GIANTS_BLOOD,!ID_WAW_FEAT_METAMORPH_MAGIC,!ID_WAW_FEAT_PARSELTONGUE,!ID_WAW_FEAT_VEELA_CHARM</requirements>
-		<prerequisite>Only First Feat</prerequisite>
+		<requirements>!ID_WAW_FEAT_GIANTS_BLOOD,!ID_WAW_FEAT_METAMORPH_MAGIC,!ID_WAW_FEAT_PARSELTONGUE,!ID_WAW_FEAT_VEELA_CHARM,ID_WAW_HOUSE_FEAT</requirements>
+		<prerequisite>Only Hogwarts House Feat</prerequisite>
 		<description>
 			<p>The rarest racial combination of all, part-goblins can have goblin ancestry anywhere in their family tree, and it will still make a very noticeable difference. At an average of 4 feet tall, part-goblins may feel out of place in a larger world. However, these small wizards have inherited goblins’ cleverness and often come with big hearts and big personalities.</p>
 			<ul>
@@ -49,8 +49,8 @@
 		</rules>
 	</element>
 	<element name="Metamorph Magic" type="Feat" source="Witchcraft and Wizardry" id="ID_WAW_FEAT_METAMORPH_MAGIC">
-		<requirements>!ID_WAW_FEAT_GIANTS_BLOOD,!ID_WAW_FEAT_GOBLIN_CUNNING,!ID_WAW_FEAT_PARSELTONGUE,!ID_WAW_FEAT_VEELA_CHARM</requirements>
-		<prerequisite>Only First Feat</prerequisite>
+		<requirements>!ID_WAW_FEAT_GIANTS_BLOOD,!ID_WAW_FEAT_GOBLIN_CUNNING,!ID_WAW_FEAT_PARSELTONGUE,!ID_WAW_FEAT_VEELA_CHARM,ID_WAW_HOUSE_FEAT</requirements>
+		<prerequisite>Only Hogwarts House Feat</prerequisite>
 		<description>
 			<p>Once in a great many years, a metamorphmagus is born to a wizarding family with their very particular talent: morphing every aspect of their human appearance. Before becoming an adult, a metamorphmagus will not have complete control over this ability, often letting their emotions or stress get the better of them and losing control.</p>
 			<ul>
@@ -64,8 +64,8 @@
 		</sheet>
 	</element>
 	<element name="Parseltongue" type="Feat" source="Witchcraft and Wizardry" id="ID_WAW_FEAT_PARSELTONGUE">
-		<requirements>!ID_WAW_FEAT_GIANTS_BLOOD,!ID_WAW_FEAT_GOBLIN_CUNNING,!ID_WAW_FEAT_METAMORPH_MAGIC,!ID_WAW_FEAT_VEELA_CHARM</requirements>
-		<prerequisite>Only First Feat</prerequisite>
+		<requirements>!ID_WAW_FEAT_GIANTS_BLOOD,!ID_WAW_FEAT_GOBLIN_CUNNING,!ID_WAW_FEAT_METAMORPH_MAGIC,!ID_WAW_FEAT_VEELA_CHARM,ID_WAW_HOUSE_FEAT</requirements>
+		<prerequisite>Only Hogwarts House Feat</prerequisite>
 		<description>
 			<p>Almost exclusively hereditary, to speak Parseltongue is to magically comprehend and verbally communicate with all snakes and snake-like beasts, like the Runespoor and Basilisk. This oral language has been associated with Dark wizards, owing to Salazar Slytherin's status as a Parselmouth which was passed on to the Gaunt family and Tom Riddle. However, outside of Wizarding Britain, no such association exists.</p>
 			<ul>
@@ -81,7 +81,7 @@
 	</element>
 	<element name="Veela Charm" type="Feat" source="Witchcraft and Wizardry" id="ID_WAW_FEAT_VEELA_CHARM">
 		<requirements>!ID_WAW_FEAT_GIANTS_BLOOD,!ID_WAW_FEAT_GOBLIN_CUNNING,!ID_WAW_FEAT_METAMORPH_MAGIC,!ID_WAW_FEAT_PARSELTONGUE</requirements>
-		<prerequisite>Only First Feat</prerequisite>
+		<prerequisite>Only Hogwarts House Feat</prerequisite>
 		<description>
 			<p>Just like part-giants, it’s very rare to find a part-veela. A wizard or witch who inherited veela blood will almost always be the center of attention, a picture of grace and beauty. Unlike half-veela or quarter-veela, part-veela are just as likely to be male as female.</p>
 			<ul>
