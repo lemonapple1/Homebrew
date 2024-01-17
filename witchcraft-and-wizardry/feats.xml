@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Witchcraft and Wizardry: Feats</name>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/feats.xml" />
+		</update>
+	</info>
+
+	<element name="Giant's Blood" type="Feat" source="Witchcraft and Wizardry" id="ID_WAW_FEAT_GIANTS_BLOOD">
+		<requirements>!ID_WAW_FEAT_GOBLIN_CUNNING,!ID_WAW_FEAT_METAMORPH_MAGIC,!ID_WAW_FEAT_PARSELTONGUE,!ID_WAW_FEAT_VEELA_CHARM</requirements>
+		<prerequisite>Only First Feat</prerequisite>
+		<description>
+			<p>Even though they are few and far between, it's hard for half-giants and part-giants to hide their genealogy; they tend to turn heads wherever they go. With a broad build, impressive strength and a genetic resistance to magic, wizards with giant blood are powerful allies.</p>
+			<ul>
+				<li>Increase your Strength score by 1, to a maximum of 20.</li>
+				<li>Adult part-giants are between 7 and 9 feet tall and weigh between 300 and 420 pounds. Your size is Medium.</li>
+				<li>You are considered one size larger when determining carrying capacity and weight you can push, drag, or lift.</li>
+				<li>When a spell or other magical effect inflicts a condition on you, you can use your reaction to resist one condition of your choice. You can’t use this ability again until you finish a long rest.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your size is Medium.
+			You are considered one size larger when determining carrying capacity and weight you can push, drag, or lift.
+			When a spell or other magical effect inflicts a condition on you, you can use your reaction to resist one condition of your choice. You can’t use this ability again until you finish a long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" />
+		</rules>
+	</element>
+	<element name="Goblin Cunning" type="Feat" source="Witchcraft and Wizardry" id="ID_WAW_FEAT_GOBLIN_CUNNING">
+		<requirements>!ID_WAW_FEAT_GIANTS_BLOOD,!ID_WAW_FEAT_METAMORPH_MAGIC,!ID_WAW_FEAT_PARSELTONGUE,!ID_WAW_FEAT_VEELA_CHARM</requirements>
+		<prerequisite>Only First Feat</prerequisite>
+		<description>
+			<p>The rarest racial combination of all, part-goblins can have goblin ancestry anywhere in their family tree, and it will still make a very noticeable difference. At an average of 4 feet tall, part-goblins may feel out of place in a larger world. However, these small wizards have inherited goblins’ cleverness and often come with big hearts and big personalities.</p>
+			<ul>
+				<li>Adult part-goblins are between 3 and 5 feet tall and weigh around 110 pounds. Your size is Small.</li>
+				<li>You can move through the space of any creature that is of a size larger than yours.</li>
+				<li>You have advantage on all Intelligence and Wisdom saving throws against magic.</li>
+				<li>You can speak, read, and write Gobbledegook.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your size is Small.
+			You have advantage on all Intelligence and Wisdom saving throws against magic.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_WAW_LANGUAGE_GOBBLEDEGOOK" />
+		</rules>
+	</element>
+	<element name="Metamorph Magic" type="Feat" source="Witchcraft and Wizardry" id="ID_WAW_FEAT_METAMORPH_MAGIC">
+		<requirements>!ID_WAW_FEAT_GIANTS_BLOOD,!ID_WAW_FEAT_GOBLIN_CUNNING,!ID_WAW_FEAT_PARSELTONGUE,!ID_WAW_FEAT_VEELA_CHARM</requirements>
+		<prerequisite>Only First Feat</prerequisite>
+		<description>
+			<p>Once in a great many years, a metamorphmagus is born to a wizarding family with their very particular talent: morphing every aspect of their human appearance. Before becoming an adult, a metamorphmagus will not have complete control over this ability, often letting their emotions or stress get the better of them and losing control.</p>
+			<ul>
+				<li>At will, you can transform your appearance. As an action, you decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. None of your statistics change, you don't appear as a creature of a different size than you, and your basic shape stays the same. If you're bipedal, you can't use this spell to become quadrupedal, for instance. At any time, you can use your action to change your appearance in this way again.</li>
+				<li>You can also adapt your body to an aquatic environment, growing webbing between your fingers. As an action, you gain a swimming speed equal to your walking speed.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>At will, you can transform your appearance. As an action, you decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. None of your statistics change, you don't appear as a creature of a different size than you, and your basic shape stays the same. If you're bipedal, you can't use this spell to become quadrupedal, for instance. At any time, you can use your action to change your appearance in this way again.
+			You can also adapt your body to an aquatic environment, growing webbing between your fingers. As an action, you gain a swimming speed equal to your walking speed.</description>
+		</sheet>
+	</element>
+	<element name="Parseltongue" type="Feat" source="Witchcraft and Wizardry" id="ID_WAW_FEAT_PARSELTONGUE">
+		<requirements>!ID_WAW_FEAT_GIANTS_BLOOD,!ID_WAW_FEAT_GOBLIN_CUNNING,!ID_WAW_FEAT_METAMORPH_MAGIC,!ID_WAW_FEAT_VEELA_CHARM</requirements>
+		<prerequisite>Only First Feat</prerequisite>
+		<description>
+			<p>Almost exclusively hereditary, to speak Parseltongue is to magically comprehend and verbally communicate with all snakes and snake-like beasts, like the Runespoor and Basilisk. This oral language has been associated with Dark wizards, owing to Salazar Slytherin's status as a Parselmouth which was passed on to the Gaunt family and Tom Riddle. However, outside of Wizarding Britain, no such association exists.</p>
+			<ul>
+				<li>You can speak Parseltongue.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can speak Parseltongue.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_WAW_LANGUAGE_PARSELTONGUE" />
+		</rules>
+	</element>
+	<element name="Veela Charm" type="Feat" source="Witchcraft and Wizardry" id="ID_WAW_FEAT_VEELA_CHARM">
+		<requirements>!ID_WAW_FEAT_GIANTS_BLOOD,!ID_WAW_FEAT_GOBLIN_CUNNING,!ID_WAW_FEAT_METAMORPH_MAGIC,!ID_WAW_FEAT_PARSELTONGUE</requirements>
+		<prerequisite>Only First Feat</prerequisite>
+		<description>
+			<p>Just like part-giants, it’s very rare to find a part-veela. A wizard or witch who inherited veela blood will almost always be the center of attention, a picture of grace and beauty. Unlike half-veela or quarter-veela, part-veela are just as likely to be male as female.</p>
+			<ul>
+				<li>You gain proficiency in one Charisma skill of your choice.</li>
+				<li>As an action, you can attempt to charm a humanoid you can see within 30 ft, who would be attracted to you. It must make a Wisdom saving throw, (if hostile, with advantage). If it fails, it is charmed by you for one hour or until you or your companions harm it. The charmed creature regards you as a friendly acquaintance and feels compelled to impress you or receive your attention. After, the creature knows it was charmed by you. You can’t use this ability again until you finish a long rest.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>As an action, you can attempt to charm a humanoid you can see within 30 ft, who would be attracted to you. It must make a Wisdom saving throw, (if hostile, with advantage). If it fails, it is charmed by you for one hour or until you or your companions harm it. The charmed creature regards you as a friendly acquaintance and feels compelled to impress you or receive your attention. After, the creature knows it was charmed by you. You can’t use this ability again until you finish a long rest.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Veela)" supports="Skill,Charisma" />
+		</rules>
+	</element>
+</elements>
