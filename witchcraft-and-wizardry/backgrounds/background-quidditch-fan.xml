@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Quidditch Fan</name>
+		<description>Quidditch Fan Background</description>
+		<update version="0.0.1">
+			<file name="background-quidditch-fan.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/backgrounds/background-quidditch-fan.xml" />
+		</update>
+	</info>
+	<element name="Quidditch Fan" type="Background" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_QUIDDITCH_FAN">
+		<requirements>ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_WILLPOWER|ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_TECHNIQUE|ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_INTELLECT</requirements>
+		<description>
+			<p>Whether your fondest childhood memories were at your local team's matches or you just discovered the sport upon arriving at Hogwarts, you love quidditch. It makes complete sense, given your competitive streak and affinity for rough-housing. You use your common sense and ability to take initiative to get by.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Acrobatics, Athletics</li>
+				<li><strong>Tool Proficiencies:</strong>Vehicle (Broomstick)</li>
+				<li><strong>Equipment:</strong>A Beater's bat, and a picture of a loved one</li>
+			</ul>
+			<div element="ID_WAW_BACKGROUND_FEATURE_SUPERFAN" />
+
+			<h3>Wand Personalities</h3>
+			<h5>Cherry</h5>
+			<p>This very rare wand wood creates a wand of strange power, most highly prized by the wizarding students of the school of Mahoutokoro in Japan, where those who own cherry wands have special prestige. The Western wand-purchaser should dispel from their minds any notion that the pink blossom of the living tree makes for a frivolous or merely ornamental wand, for cherry wood often makes a wand that possesses truly lethal power, whatever the core.</p>
+			<h5>Fir</h5>
+			<p>One wandmaker called wands of fir wood ‘the survivor’s wand’, because he had sold it to three wizards who subsequently passed through mortal peril unscathed. There is no doubt that this wood, coming as it does from the most resilient of trees, produces wands that demand staying power and strength of purpose in their true owners. Fir wands are particularly suited to Transfiguration, and favour owners of focused, strong-minded and, occasionally, intimidating demeanor.</p>
+			<h5>Spruce</h5>
+			<p>Spruce wands are ill-matched with cautious or nervous natures, becoming positively dangerous in fumbling fingers. They require a firm hand, because they seem to have their own ideas about what magic it ought to produce. However, when a spruce wand meets its match in a bold spell-caster with a good sense of humor, it becomes a superb helper. Intensely loyal to owners, the wands are capable of producing particularly flamboyant and dramatic effects.</p>
+		</description>
+		<setters>
+			<set name="short">Acrobatics, Athletics</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_WAW_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_BROOMSTICK" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select type="List" name="Wand Wood (Personality Trait)">
+				<item id="1">Cherry</item>
+				<item id="2">Fir</item>
+				<item id="3">Spruce</item>
+			</select>
+			<select type="List" name="Wand Core (Ideal)">
+				<item id="1">Unicorn Hair: Friends. I’m loyal to my friends, and anyone else can go soak their head.</item>
+				<item id="2">Dragon Heartstring: Retribution. Wrongdoers should suffer the same misery they've inflicted.</item>
+				<item id="3">Phoenix Feather: Competition. The struggle to win and survive drives greatness.</item>
+			</select>
+			<select type="List" name="Wand Length (Bond)">
+				<item id="1">9.5": I will be incredible at my chosen pursuits, the greatest that ever lived.</item>
+				<item id="2">11": I'll never forget a crushing defeat or the opponent who dealt it.</item>
+				<item id="3">14": Those who fight beside me are those worth dying for.</item>
+			</select>
+			<select type="List" name="Wand Flexibility (Flaw)">
+				<item id="1">Unbending: My hatred of my enemies is blind and unreasoning.</item>
+				<item id="2">Fairly Supple: Despite my best efforts, I am unreliable to my friends.</item>
+				<item id="3">Very Pliant: I too often hear veiled insults and threats in innocent words, and I'm quick to anger.</item>
+			</select>
+		</rules>
+	</element>
+	<element name="Optional Feature: Superfan" type="Background Feature" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_FEATURE_SUPERFAN">
+		<supports>Background Feature, Optional Background Feature</supports>
+		<description>
+			<p>It seems like you can only think about broomsticks and quaffles. You're always on top of recent matches, the latest brooms, and quidditch tactics. Also, you can easily strike up conversation and build rapport with a fellow enthusiast.</p>
+		</description>
+		<sheet alt="Superfan" />
+	</element>
+</elements>

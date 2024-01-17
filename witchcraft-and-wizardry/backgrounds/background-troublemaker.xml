@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Troublemaker</name>
+		<description>Troublemaker Background</description>
+		<update version="0.0.1">
+			<file name="background-troublemaker.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/backgrounds/background-troublemaker.xml" />
+		</update>
+	</info>
+	<element name="Troublemaker" type="Background" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_TROUBLEMAKER">
+		<requirements>ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_WILLPOWER|ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_TECHNIQUE|ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_INTELLECT</requirements>
+		<description>
+			<p>Whether your fondest childhood memories were at your local team's matches or you just discovered the sport upon arriving at Hogwarts, you love quidditch. It makes complete sense, given your competitive streak and affinity for rough-housing. You use your common sense and ability to take initiative to get by.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Sleight of Hand, Stealth</li>
+				<li><strong>Equipment:</strong>A ring with a family crest or another type of heirloom jewelry, and a peacock feather quill</li>
+			</ul>
+			<div element="ID_WAW_BACKGROUND_FEATURE_CREATIVE_THINKER" />
+
+			<h3>Wand Personalities</h3>
+			<h5>Dogwood</h5>
+			<p>Dogwood wands are quirky, noisy, and mischievous; they have playful natures and insist upon partners who provide excitement and fun. It would be quite wrong to think dogwood wands aren’t capable of serious magic; they perform outstanding spells in difficult conditions, and with a suitably clever owner, can produce dazzling enchantments.</p>
+			<h5>Ebony</h5>
+			<p>Ebony wands are impressive in appearance and reputation, being highly suited to Transfiguration and combative magic. Ebony is happiest in the hand of those with the courage to be themselves. Frequently non-conformist or comfortable with being an outsider, the ebony wand’s perfect match will not be swayed lightly from their beliefs and purpose.</p>
+			<h5>Elder</h5>
+			<p>The rarest wand wood of all, and reputed to be unlucky (a baseless superstition), elder wands are trickiest to master. They contain powerful magic, but scorn any owner who is not a superior caster; it takes a remarkable wizard to keep an elder wand. The truth is that only a highly unusual person will find their perfect match in elder, but that witch or wizard in question is certainly marked out for a special destiny.</p>
+			<h5>Holly</h5>
+			<p>Holly is one of the rarer kinds of wand woods; traditionally considered protective, it works most happily for those who may need help overcoming a tendency to anger and impetuosity. At the same time, holly wands often choose owners engaged in some dangerous and often spiritual quest. Holly is a notoriously difficult wood to team with phoenix feather, but should such a pairing find its match, nothing and nobody should stand in their way.</p>
+		</description>
+		<setters>
+			<set name="short">Sleight of Hand, Stealth</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select type="List" name="Wand Wood (Personality Trait)">
+				<item id="1">Dogwood</item>
+				<item id="2">Ebony</item>
+				<item id="3">Elder</item>
+				<item id="4">Holly</item>
+			</select>
+			<select type="List" name="Wand Core (Ideal)">
+				<item id="1">Unicorn Hair: Aspiration. I'm going to prove that I'm worthy of a better life.</item>
+				<item id="2">Dragon Heartstring: Cynicism. I only help the people who help me; that’s how you survive.</item>
+				<item id="3">Phoenix Feather: Freedom. When people follow rules blindly, they imprison themselves.</item>
+			</select>
+			<select type="List" name="Wand Length (Bond)">
+				<item id="1">9": An impudent joke once earned me a horrible beating, and I will take my revenge on any bully I encounter.</item>
+				<item id="2">11.5": I will do anything to prove myself superior to my hated rival.</item>
+				<item id="3">13.5": No one else is going to have to endure the hardships I've been through.</item>
+			</select>
+			<select type="List" name="Wand Flexibility (Flaw)">
+				<item id="1">Stiff: Once someone questions my courage, I never back down no matter how dangerous the situation.</item>
+				<item id="2">Slightly Bendy: I remember every insult I've received and nurse a silent resentment toward anyone who's ever wronged me.</item>
+				<item id="3">Flexible: I'll say anything to avoid having to do extra work.</item>
+			</select>
+		</rules>
+	</element>
+	<element name="Optional Feature: Creative Thinker" type="Background Feature" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_FEATURE_CREATIVE_THINKER">
+		<supports>Background Feature, Optional Background Feature</supports>
+		<description>
+			<p>Having found yourself in some predicaments, you're quick to look for a way out; "work smart, not hard" is your motto. Your invented alibis always sound half-reasonable to others, and you're good at finding figurative and literal shortcuts. Also, rule-breakers are more willing to share their secrets with you.</p>
+		</description>
+		<sheet alt="Creative Thinker" />
+	</element>
+</elements>

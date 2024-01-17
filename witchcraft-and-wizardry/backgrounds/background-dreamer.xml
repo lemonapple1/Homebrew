@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dreamer</name>
+		<description>Dreamer Background</description>
+		<update version="0.0.1">
+			<file name="background-dreamer.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/backgrounds/background-dreamer.xml" />
+		</update>
+	</info>
+	<element name="Dreamer" type="Background" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_BOOKWORM">
+		<requirements>ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_WILLPOWER|ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_TECHNIQUE|ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_INTELLECT</requirements>
+		<description>
+			<p>You've always been known to have your nose in a book, whether obsessing over homework or escaping reality into a world of fiction. You often solve your problems through research and study. Because you absorb so much from others, you've learned things, traveled places, felt emotions, and seen wonders far beyond your own experiences.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Magical Theory (Arcana), Investigation</li>
+				<li><strong>Tool Proficiencies:</strong>Astronomer's Tools</li>
+				<li><strong>Equipment:</strong>Astronomer's tools, and a mystical trinket you believe gives you protection (but doesn't)</li>
+			</ul>
+			<div element="ID_WAW_BACKGROUND_FEATURE_STARGAZER" />
+
+			<h3>Wand Personalities</h3>
+			<h5>Black Walnut</h5>
+			<p>Less common than the standard walnut wand, black walnut wands seek a master of good instincts and powerful insight. Black walnut is a very handsome wood, but is not the easiest to master. If the wand is paired with a sincere, self-aware owner, however, it becomes one of the most loyal and impressive wands of all, with a particular flair in all kinds of charmwork.</p>
+			<h5>Cedar</h5>
+			<p>Never matched to the easily-fooled, the cedar wand finds its perfect home where there is perspicacity and perception. Some wandmakers would go further than that, saying one should never cross the owner of a cedar wand, especially if harm is done to their allies or kin. The witch or wizard who is well-matched with cedar carries the potential to be a frightening adversary, which often comes as a shock to those who have thoughtlessly challenged them.</p>
+			<h5>Hazel</h5>
+			<p>A sensitive wand, hazel often reflect its owner’s emotional state and works best for a master who understands and can manage their own feelings. Others should be careful handling a hazel wand if its owner has been angered or disappointed, because the wand will absorb such energy and discharge it unpredictably. It is capable of outstanding magic in the hands of the skilful and is so devoted to its owner that it often ‘wilts’ at the end of their master's life.</p>
+			<h5>Redwood</h5>
+			<p>Wand-quality redwood is in short supply due to its reputation for bringing good fortune. As usual with wandlore, the populace has it backwards: redwood wands are not themselves lucky, but are strongly attracted to witches and wizards who already possess the admirable ability to fall on their feet, to make the right choice, to snatch advantage from catastrophe. One can expect to hear of exciting exploits when such a witch or wizard wields a redwood wand.</p>
+			<h5>Silver Lime</h5>
+			<p>This unusual and highly attractive wand wood was greatly in vogue in the nineteenth century, and demand consistently outstripped supply. The reasons for these wands’ desirability lay not only in their unusually handsome appearance, but also because they had a reputation for performing best for Seers and those skilled in Legilimency, mysterious arts both, which consequently gave the possessor of a silver lime wand</p>
+		</description>
+		<setters>
+			<set name="short">Arcana, Investigation</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Proficiency" id="ID_WAW_PROFICIENCY_TOOL_ASTRONOMERS_TOOLS" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select type="List" name="Wand Wood (Personality Trait)">
+				<item id="1">Black Walnut</item>
+				<item id="2">Cedar</item>
+				<item id="3">Hazel</item>
+				<item id="4">Redwood</item>
+				<item id="5">Silver Lime</item>
+			</select>
+			<select type="List" name="Wand Core (Ideal)">
+				<item id="1">Unicorn Hair: Honesty. Lies, hypocrisy and inauthenticity cause the most spiritual harm to a person's soul.</item>
+				<item id="2">Dragon Heartstring: Change. All good and bad things must come to an end. Change is the nature of existence.</item>
+				<item id="3">Phoenix Feather: Independence. My spirit is free, and no one else has authority over my life.</item>
+			</select>
+			<select type="List" name="Wand Length (Bond)">
+				<item id="1">9.5": I'm seeking enlightenment, but it always eludes me.</item>
+				<item id="2">11.5": I see what others are blind to, and I need to open their eyes.</item>
+				<item id="3">14": I suffer recurring dreams of a terrible event in the future and will do anything to prevent it.</item>
+			</select>
+			<select type="List" name="Wand Flexibility (Flaw)">
+				<item id="1">Rigid: I can't keep a secret to save my life, or anyone else's.</item>
+				<item id="2">Slightly Yielding: I am dogmatic in my thoughts and philosophy.</item>
+				<item id="3">Surprisingly Swishy: I am easily distracted and if there's a plan, I'll forget it. If I don't forget it, I'll ignore it.</item>
+			</select>
+		</rules>
+	</element>
+	<element name="Optional Feature: Stargazer" type="Background Feature" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_FEATURE_STARGAZER">
+		<supports>Background Feature, Optional Background Feature</supports>
+		<description>
+			<p>Many of your nights are spent staring up at space, contemplating existence. You're a natural at Astronomy and share the Centaurs' views on the importance of the heavens. Your affinity for the ethereal also leads ghosts to be more trusting of you and more forthcoming with information.</p>
+		</description>
+		<sheet alt="Stargazer" />
+	</element>
+</elements>

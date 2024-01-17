@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Protector</name>
+		<description>Protector Background</description>
+		<update version="0.0.1">
+			<file name="background-protector.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/backgrounds/background-protector.xml" />
+		</update>
+	</info>
+	<element name="Protector" type="Background" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_PROTECTOR">
+		<requirements>ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_WILLPOWER|ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_TECHNIQUE|ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_INTELLECT</requirements>
+		<description>
+			<p>You have a strong sense of justice and do everything you can to stand up for victims, likely because of an instinctive empathy or your own history of being victimized. Seeing a narcissist take advantage of someone else makes you feel sick. You've made sure you're physically capable of stopping the people you care about from being hurt, so you make an excellent ally to the downtrodden.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Athletics, Intimidation</li>
+				<li><strong>Equipment:</strong>A Beater's bat, and a picture of a loved one</li>
+			</ul>
+			<div element="ID_WAW_BACKGROUND_FEATURE_PEOPLES_CHAMP" />
+			<div element="ID_WAW_BACKGROUND_FEATURE_BULLY" />
+
+			<h3>Wand Personalities</h3>
+			<h5>Blackthorn</h5>
+			<p>A very unusual wand wood, blackthorn wands have the reputation of being best suited to a warrior. One finds blackthorn wands among the Aurors as well as among the denizens of Azkaban. These wands appear to need to pass through danger or hardship with their owners to become truly bonded. Given this condition, the blackthorn wand will become a loyal and faithful servant.</p>
+			<h5>Hawthorn</h5>
+			<p>Hawthorn wands may be particularly suited to healing magic, but they are also adept at curses, and it has been generally observed that the hawthorn wand seems most at home with a conflicted nature or a period of turmoil. Hawthorn wands are not easy to master, however, and one should only ever be placed in the hands of a witch or wizard of proven talent. Hawthorn wands have a notable peculiarity: their spells can, when badly handled, backfire.</p>
+			<h5>Mahogany</h5>
+			<p>The mahogany tree symbolizes strength, safety, protectiveness, and practicality, and these traits are mirrored in a mahogany wand’s suitable match. With plenty of power and a knack for transfiguration, the owners of mahogany wands are often reliable and serve as cornerstones for their local wizard community.</p>
+			<h5>Rowan</h5>
+			<p>Rowan wood has always been much-favored for wands, because it is reputed to be more protective than any other and renders all manner of defensive charms especially strong and difficult to break. It is also commonly stated that no dark witch or wizard ever owned a rowan wand. Rowan is most happily placed with the clear-headed and the pure-hearted, but this reputation for virtue ought not to fool anyone – these wands frequently outperform others in duels.</p>
+			<h5>Yew</h5>
+			<p>Yew wands are among the rarer kinds, and their ideal matches are likewise unusual and occasionally notorious. The wand of yew is reputed to endow the power of life and death, retaining a fearsome reputation in the spheres of duelling and curses. However, a witch or wizard might equally prove a fierce protector. Where wizards have been buried with wands of yew, the wand generally sprouts into a tree guarding the owner’s grave. A yew wand never chooses either a mediocre or a timid owner.</p>
+		</description>
+		<setters>
+			<set name="short">Athletics, Intimidation</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select type="List" name="Wand Wood (Personality Trait)">
+				<item id="1">Blackthorn</item>
+				<item id="2">Hawthorn</item>
+				<item id="3">Mahogany</item>
+				<item id="4">Rowan</item>
+				<item id="5">Yew</item>
+			</select>
+			<select type="List" name="Wand Core (Ideal)">
+				<item id="1">Unicorn Hair: Charity. I always try to help those in need, no matter what the personal cost.</item>
+				<item id="2">Dragon Heartstring: Fairness. No one should get preferential treatment, and no one is above justice.</item>
+				<item id="3">Phoenix Feather: Might. History is written by the victors, and the strong will always win.</item>
+			</select>
+			<select type="List" name="Wand Length (Bond)">
+				<item id="1">9.5": I owe a debt I can never repay to someone who once defended me.</item>
+				<item id="2">10.5": Nothing is more important than honoring a pledge I make.</item>
+				<item id="3">13.5": I protect those who cannot protect themselves.</item>
+			</select>
+			<select type="List" name="Wand Flexibility (Flaw)">
+				<item id="1">Very Solid: I have little respect for anyone who is not willing to stand up for what is right.</item>
+				<item id="2">Mildly Flexible: Secretly, I believe that things would be better if I were a tyrant, ruling over everyone else.</item>
+				<item id="3">Whippy: Too often, violence is my answer to almost any situation.</item>
+			</select>
+		</rules>
+	</element>
+	<element name="Optional Feature: People's Champ" type="Background Feature" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_FEATURE_PEOPLES_CHAMP">
+		<supports>Background Feature, Optional Background Feature</supports>
+		<description>
+			<p>The way you carry yourself makes people comfortable and confident that you can help them when they're feeling harrassed or imperiled. As long as you live up to your reputation, your noble deeds can make you a shoo-in for prefect, team captain or other small positions of authority.</p>
+		</description>
+		<sheet alt="People's Champ" />
+	</element>
+	<element name="Optional Feature: Bully" type="Background Feature" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_FEATURE_BULLY">
+		<supports>Background Feature, Optional Background Feature</supports>
+		<description>
+			<p>When you feel powerless, you hurt those weaker than you to regain some semblance of control. It might be a necessary coping mechanism, an assertive demeanor or an innately sadistic nature. You might even be very selective about your victims or only lash out in relatively harmless ways. Regardless, you're a bully and you thrive off of feeling superior.</p>
+		</description>
+		<sheet alt="Bully" />
+	</element>
+</elements>

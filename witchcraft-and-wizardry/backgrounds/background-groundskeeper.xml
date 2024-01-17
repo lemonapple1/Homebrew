@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Groundskeeper</name>
+		<description>Groundskeeper Background</description>
+		<update version="0.0.1">
+			<file name="background-groundskeeper.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/backgrounds/background-groundskeeper.xml" />
+		</update>
+	</info>
+	<element name="Groundskeeper" type="Background" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_GROUNDSKEEPER">
+		<requirements>ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_WILLPOWER|ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_TECHNIQUE|ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_INTELLECT</requirements>
+		<description>
+			<p>Your childhood has always been spent outdoors, climbing trees or capturing insects. You've always felt an intense connection to all forms of life around you, and that drives you to be considerate towards other beings. Going without fresh air leaves you feeling trapped, but some greenery and a ray of sunshine is all it takes to put you in a great mood.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Survival, Magical Creatures (Animal Handling)</li>
+				<li><strong>Tool Proficiencies:</strong>Herbologist's Tools</li>
+				<li><strong>Equipment:</strong>Herbologist's Tools, and a compass</li>
+			</ul>
+			<div element="ID_WAW_BACKGROUND_FEATURE_VALUE_ALL_LIFE" />
+
+			<h3>Wand Personalities</h3>
+			<h5>Chestnut</h5>
+			<p>This is a most curious, multi-faceted wood, which takes a great deal of colour from the personality that possesses it. The wand of chestnut is attracted to witches and wizards who are skilled tamers of magical beasts and those who are natural fliers. However, three successive heads of the Wizengamot have possessed chestnut and unicorn wands, for this combination shows a predilection for those concerned with all manner of justice.</p>
+			<h5>English Oak</h5>
+			<p>A wand for good times and bad, this is a friend as loyal as the wizard who deserves it. Wands of English oak demand partners of strength, courage and fidelity. Less well-known is the propensity for owners of English oak wands to have powerful intuition, and, often, an affinity with the magic of the natural world, with the creatures and plants that are necessary to wizardkind.</p>
+			<h5>Maple</h5>
+			<p>Garrick Ollivander found that witches and wizards chosen by maple wands, a beautiful and desirable wood, are by nature travelers and explorers. They are not stay-at-home wands, and prefer ambition in their owner, otherwise their magic grows lackluster. Fresh challenges and regular changes of scene cause this wand to literally shine, burnishing itself as it grows with its partner in ability and status, earning its reputation as the wand of high achievers.</p>
+			<h5>Poplar</h5>
+			<p>Poplar wands can be relied upon, wands of consistency, strength and uniform power. Always happiest when working with a witch or wizard of clear moral vision, some wizards joke that a poplar wand has never chosen a politician. However, two of the Ministry’s most accomplished Ministers for Magic, Eldritch Diggory and Evangeline Orpington, were possessors of fine, Ollivander-made poplar wands.</p>
+		</description>
+		<setters>
+			<set name="short">Survival, Magical Creatures (Animal Handling)</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+			<grant type="Proficiency" id="ID_WAW_PROFICIENCY_TOOL_HERBOLOGISTS_TOOLS" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select type="List" name="Wand Wood (Personality Trait)">
+				<item id="1">Chestnut</item>
+				<item id="2">English Oak</item>
+				<item id="3">Maple</item>
+				<item id="4">Poplar</item>
+			</select>
+			<select type="List" name="Wand Core (Ideal)">
+				<item id="1">Unicorn Hair: Redemption. There’s a spark of good in everyone.</item>
+				<item id="2">Dragon Heartstring: Community. We have to take care of each other, because no one else will.</item>
+				<item id="3">Phoenix Feather: Nature. The natural world is more precious than all of so-called civilization.</item>
+			</select>
+			<select type="List" name="Wand Length (Bond)">
+				<item id="1">10.5": An injury to unspoiled wilderness is an injury to me.</item>
+				<item id="2">11": I owe my life to the wizard who took me in when my parents died.</item>
+				<item id="3">13.5": It is my duty to preserve and sustain endangered creatures.</item>
+			</select>
+			<select type="List" name="Wand Flexibility (Flaw)">
+				<item id="1">Brittle: I am suspicious of strangers and suspect the worst of them.</item>
+				<item id="2">Slightly Springy: I speak quite tactlessly, without really thinking through my words.</item>
+				<item id="3">Quite Bendy: Don't expect me to save those who can't save themselves. It is nature's way that the strong thrive and the weak perish.</item>
+			</select>
+		</rules>
+	</element>
+	<element name="Optional Feature: Value All Life" type="Background Feature" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_FEATURE_VALUE_ALL_LIFE">
+		<supports>Background Feature, Optional Background Feature</supports>
+		<description>
+			<p>You've earned a reputation for your compassionate demeanor. Magical beings and intelligent beasts are more likely to treat you favorably or grant you an audience. If they have any prejudices against wizardkind, you'll have the chance to prove yourself and become exempt from those prejudices.</p>
+		</description>
+		<sheet alt="Value All Life" />
+	</element>
+</elements>

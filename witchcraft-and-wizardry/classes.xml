@@ -21,7 +21,7 @@
 			<h5>PROFICIENCIES</h5>
 			<ul class="unstyled">
 				<li><strong>Saving Throws:</strong> Constitution, Charisma</li>
-				<li><strong>Skills:</strong> Choose two from Athletics, Deception, Intimidation, Magical Theory, Persuasion, Sleight of Hand, and Survival</li>
+				<li><strong>Skills:</strong> Choose two from Athletics, Deception, Intimidation, Magical Theory (Arcana), Persuasion, Sleight of Hand, and Survival</li>
 			</ul>
 			<h5>EQUIPMENT</h5>
 			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
@@ -36,26 +36,26 @@
 				<thead>
 					<tr><td class="col-5">Level</td><td class="col-10">Sorcery Points</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
 				</thead>
-				<tr><td> 1st</td><td>—</td><td class="left">Spellcasting, Sorcerous Resilience, School of Magic		</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 2nd</td><td>2</td><td class="left">Font of Magic											</td><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 3rd</td><td>3</td><td class="left">Metamagic												</td><td>4</td><td>5</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 4th</td><td>4</td><td class="left">Ability Score Improvement								</td><td>5</td><td>6</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 5th</td><td>5</td><td class="left">—														</td><td>5</td><td>8</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 6th</td><td>6</td><td class="left">School of Magic Feature, Apparition Lessons				</td><td>5</td><td>8</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 7th</td><td>7</td><td class="left">—														</td><td>6</td><td>10</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 8th</td><td>8</td><td class="left">Ability Score Improvement								</td><td>6</td><td>11</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 9th</td><td>9</td><td class="left">—														</td><td>6</td><td>13</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>10th</td><td>10</td><td class="left">Metamagic												</td><td>7</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>11th</td><td>11</td><td class="left">—														</td><td>7</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>12th</td><td>12</td><td class="left">Ability Score Improvement								</td><td>7</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>13th</td><td>13</td><td class="left">—														</td><td>8</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
-				<tr><td>14th</td><td>14</td><td class="left">School of Magic Feature								</td><td>8</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
-				<tr><td>15th</td><td>15</td><td class="left">—														</td><td>8</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
-				<tr><td>16th</td><td>16</td><td class="left">Ability Score Improvement								</td><td>8</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
-				<tr><td>17th</td><td>17</td><td class="left">Metamagic												</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-				<tr><td>18th</td><td>18</td><td class="left">School of Magic Feature								</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-				<tr><td>19th</td><td>19</td><td class="left">Ability Score Improvement								</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
-				<tr><td>20th</td><td>20</td><td class="left">Signature Spells										</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+				<tr><td> 1st</td><td>—</td><td class="left">Spellcasting, Sorcerous Resilience, School of Magic	</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td>2</td><td class="left">Font of Magic										</td><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td>3</td><td class="left">Metamagic											</td><td>4</td><td>5</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>4</td><td class="left">Ability Score Improvement							</td><td>5</td><td>6</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>5</td><td class="left">—													</td><td>5</td><td>8</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>6</td><td class="left">School of Magic Feature, Apparition Lessons			</td><td>5</td><td>8</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>7</td><td class="left">—													</td><td>6</td><td>10</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>8</td><td class="left">Ability Score Improvement							</td><td>6</td><td>11</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>9</td><td class="left">—													</td><td>6</td><td>13</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>10</td><td class="left">Metamagic											</td><td>7</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>11</td><td class="left">—													</td><td>7</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>12</td><td class="left">Ability Score Improvement							</td><td>7</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>13</td><td class="left">—													</td><td>8</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>14th</td><td>14</td><td class="left">School of Magic Feature							</td><td>8</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>15th</td><td>15</td><td class="left">—													</td><td>8</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>16th</td><td>16</td><td class="left">Ability Score Improvement							</td><td>8</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>17th</td><td>17</td><td class="left">Metamagic											</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>18th</td><td>18</td><td class="left">School of Magic Feature							</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>19th</td><td>19</td><td class="left">Ability Score Improvement							</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>20th</td><td>20</td><td class="left">Signature Spells									</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
 			</table>
 			<div element="ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_WILLPOWER" />
 			<div element="ID_WAW_CLASS_FEATURE_CASTER_WILLPOWER_SORCEROUS_RESILIENCE" />
@@ -183,7 +183,7 @@
 			<h5>PROFICIENCIES</h5>
 			<ul class="unstyled">
 				<li><strong>Saving Throws:</strong> Wisdom, Intelligence</li>
-				<li><strong>Skills:</strong> Choose two from Acrobatics, Nature, Insight, Perception, Persuasion, Sleight of Hand, and Survival</li>
+				<li><strong>Skills:</strong> Choose two from Acrobatics, Herbology (Nature), Insight, Perception, Potion-Making (Religion), Sleight of Hand, and Survival</li>
 			</ul>
 			<h5>EQUIPMENT</h5>
 			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
@@ -198,26 +198,26 @@
 				<thead>
 					<tr><td class="col-5">Level</td><td class="col-10">Sorcery Points</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
 				</thead>
-				<tr><td> 1st</td><td>—</td><td class="left">Spellcasting, School of Magic							</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 2nd</td><td>2</td><td class="left">Font of Magic											</td><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 3rd</td><td>3</td><td class="left">Metamagic, Spell Deflection								</td><td>4</td><td>5</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 4th</td><td>4</td><td class="left">Ability Score Improvement								</td><td>5</td><td>6</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 5th</td><td>5</td><td class="left">—														</td><td>5</td><td>8</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 6th</td><td>6</td><td class="left">School of Magic Feature, Apparition Lessons				</td><td>5</td><td>8</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 7th</td><td>7</td><td class="left">—														</td><td>6</td><td>10</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 8th</td><td>8</td><td class="left">Ability Score Improvement								</td><td>6</td><td>11</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 9th</td><td>9</td><td class="left">—														</td><td>6</td><td>13</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>10th</td><td>10</td><td class="left">Metamagic												</td><td>7</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>11th</td><td>11</td><td class="left">—														</td><td>7</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>12th</td><td>12</td><td class="left">Ability Score Improvement								</td><td>7</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>13th</td><td>13</td><td class="left">—														</td><td>8</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
-				<tr><td>14th</td><td>14</td><td class="left">School of Magic Feature								</td><td>8</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
-				<tr><td>15th</td><td>15</td><td class="left">—														</td><td>8</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
-				<tr><td>16th</td><td>16</td><td class="left">Ability Score Improvement								</td><td>8</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
-				<tr><td>17th</td><td>17</td><td class="left">Metamagic												</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-				<tr><td>18th</td><td>18</td><td class="left">School of Magic Feature								</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-				<tr><td>19th</td><td>19</td><td class="left">Ability Score Improvement								</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
-				<tr><td>20th</td><td>20</td><td class="left">Sorcerous Restoration									</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+				<tr><td> 1st</td><td>—</td><td class="left">Spellcasting, School of Magic				</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td>2</td><td class="left">Font of Magic								</td><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td>3</td><td class="left">Metamagic, Spell Deflection					</td><td>4</td><td>5</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>4</td><td class="left">Ability Score Improvement					</td><td>5</td><td>6</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>5</td><td class="left">—											</td><td>5</td><td>8</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>6</td><td class="left">School of Magic Feature, Apparition Lessons	</td><td>5</td><td>8</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>7</td><td class="left">—											</td><td>6</td><td>10</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>8</td><td class="left">Ability Score Improvement					</td><td>6</td><td>11</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>9</td><td class="left">—											</td><td>6</td><td>13</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>10</td><td class="left">Metamagic									</td><td>7</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>11</td><td class="left">—											</td><td>7</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>12</td><td class="left">Ability Score Improvement					</td><td>7</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>13</td><td class="left">—											</td><td>8</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>14th</td><td>14</td><td class="left">School of Magic Feature					</td><td>8</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>15th</td><td>15</td><td class="left">—											</td><td>8</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>16th</td><td>16</td><td class="left">Ability Score Improvement					</td><td>8</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>17th</td><td>17</td><td class="left">Metamagic									</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>18th</td><td>18</td><td class="left">School of Magic Feature					</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>19th</td><td>19</td><td class="left">Ability Score Improvement					</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>20th</td><td>20</td><td class="left">Sorcerous Restoration						</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
 			</table>
 			<div element="ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_TECHNIQUE" />
 			<div element="ID_WAW_CLASS_FEATURE_CASTER_SCHOOL_OF_MAGIC" />
@@ -238,7 +238,7 @@
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM"/>
-			<select type="Proficiency" name="Skill Proficiency (Caster)" number="2" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<select type="Proficiency" name="Skill Proficiency (Caster)" number="2" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_SURVIVAL" />
 		
 			<grant type="Class Feature" id="ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_TECHNIQUE" level="1" />
 			<grant type="Class Feature" id="ID_WAW_CLASS_FEATURE_CASTER_SCHOOL_OF_MAGIC" level="1"/>
@@ -337,7 +337,7 @@
 			<h5>PROFICIENCIES</h5>
 			<ul class="unstyled">
 				<li><strong>Saving Throws:</strong> Dexterity, Intelligence</li>
-				<li><strong>Skills:</strong> Choose two from Acrobatics, Nature, Insight, Investigation, Animal Handling, Magical Theory, Medicine, History, and Survival</li>
+				<li><strong>Skills:</strong> Choose two from Acrobatics, Herbology (Nature), Insight, Investigation, Magical Creatures (Animal Handling), Magical Theory (Arcana), Medicine, Muggle Studies (History), and Survival</li>
 			</ul>
 			<h5>EQUIPMENT</h5>
 			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
@@ -352,26 +352,26 @@
 				<thead>
 					<tr><td class="col-5">Level</td><td class="col-10">Sorcery Points</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
 				</thead>
-				<tr><td> 1st</td><td>—</td><td class="left">Spellcasting, School of Magic, Ritual Casting			</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 2nd</td><td>2</td><td class="left">Font of Magic											</td><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 3rd</td><td>3</td><td class="left">Metamagic, Diverse Studies								</td><td>4</td><td>5</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 4th</td><td>4</td><td class="left">Ability Score Improvement								</td><td>5</td><td>6</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 5th</td><td>5</td><td class="left">—														</td><td>5</td><td>8</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 6th</td><td>6</td><td class="left">School of Magic Feature, Apparition Lessons				</td><td>5</td><td>8</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 7th</td><td>7</td><td class="left">—														</td><td>6</td><td>10</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 8th</td><td>8</td><td class="left">Ability Score Improvement								</td><td>6</td><td>11</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 9th</td><td>9</td><td class="left">—														</td><td>6</td><td>13</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>10th</td><td>10</td><td class="left">Metamagic												</td><td>7</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>11th</td><td>11</td><td class="left">—														</td><td>7</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>12th</td><td>12</td><td class="left">Ability Score Improvement								</td><td>7</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>13th</td><td>13</td><td class="left">—														</td><td>8</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
-				<tr><td>14th</td><td>14</td><td class="left">School of Magic Feature								</td><td>8</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
-				<tr><td>15th</td><td>15</td><td class="left">—														</td><td>8</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
-				<tr><td>16th</td><td>16</td><td class="left">Ability Score Improvement								</td><td>8</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
-				<tr><td>17th</td><td>17</td><td class="left">Metamagic												</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-				<tr><td>18th</td><td>18</td><td class="left">School of Magic Feature								</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-				<tr><td>19th</td><td>19</td><td class="left">Ability Score Improvement								</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
-				<tr><td>20th</td><td>20</td><td class="left">Arcane Recovery										</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+				<tr><td> 1st</td><td>—</td><td class="left">Spellcasting, School of Magic, Ritual Casting	</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td>2</td><td class="left">Font of Magic									</td><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td>3</td><td class="left">Metamagic, Diverse Studies						</td><td>4</td><td>5</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>4</td><td class="left">Ability Score Improvement						</td><td>5</td><td>6</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>5</td><td class="left">—												</td><td>5</td><td>8</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>6</td><td class="left">School of Magic Feature, Apparition Lessons		</td><td>5</td><td>8</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>7</td><td class="left">—												</td><td>6</td><td>10</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>8</td><td class="left">Ability Score Improvement						</td><td>6</td><td>11</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>9</td><td class="left">—												</td><td>6</td><td>13</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>10</td><td class="left">Metamagic										</td><td>7</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>11</td><td class="left">—												</td><td>7</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>12</td><td class="left">Ability Score Improvement						</td><td>7</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>13</td><td class="left">—												</td><td>8</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>14th</td><td>14</td><td class="left">School of Magic Feature						</td><td>8</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>15th</td><td>15</td><td class="left">—												</td><td>8</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>16th</td><td>16</td><td class="left">Ability Score Improvement						</td><td>8</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>17th</td><td>17</td><td class="left">Metamagic										</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>18th</td><td>18</td><td class="left">School of Magic Feature						</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>19th</td><td>19</td><td class="left">Ability Score Improvement						</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>20th</td><td>20</td><td class="left">Arcane Recovery								</td><td>9</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
 			</table>
 			<div element="ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_INTELLECT" />
 			<div element="ID_WAW_CLASS_FEATURE_CASTER_SCHOOL_OF_MAGIC" />
@@ -393,7 +393,7 @@
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE"/>
-			<select type="Proficiency" name="Skill Proficiency (Caster)" number="2" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<select type="Proficiency" name="Skill Proficiency (Caster)" number="2" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_SURVIVAL" />
 		
 			<grant type="Class Feature" id="ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_INTELLECT" level="1" />
 			<grant type="Class Feature" id="ID_WAW_CLASS_FEATURE_CASTER_SCHOOL_OF_MAGIC" level="1"/>

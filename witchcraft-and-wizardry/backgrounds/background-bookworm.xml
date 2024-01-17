@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Bookworm</name>
+		<description>Bookworm Background</description>
+		<update version="0.0.1">
+			<file name="background-bookworm.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/backgrounds/background-bookworm.xml" />
+		</update>
+	</info>
+	<element name="Bookworm" type="Background" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_BOOKWORM">
+		<requirements>ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_WILLPOWER|ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_TECHNIQUE|ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_INTELLECT</requirements>
+		<description>
+			<p>You've always been known to have your nose in a book, whether obsessing over homework or escaping reality into a world of fiction. You often solve your problems through research and study. Because you absorb so much from others, you've learned things, traveled places, felt emotions, and seen wonders far beyond your own experiences.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Magical Theory (Arcana), Investigation</li>
+				<li><strong>Languages:</strong>One of your choice</li>
+				<li><strong>Equipment:</strong>Your favorite book, a book you're currently reading, and a small back-up quill</li>
+			</ul>
+			<div element="ID_WAW_BACKGROUND_FEATURE_TEACHERS_PET" />
+			<div element="ID_WAW_BACKGROUND_FEATURE_PRODIGY" />
+
+			<h3>Wand Personalities</h3>
+			<h5>Beech</h5>
+			<p>The true match for a beech wand will be, if young, wise beyond his or her years, and if full-grown, rich in understanding and experience. Beech wands perform very weakly for the narrow-minded and intolerant. When properly matched, the beech wand is capable of a subtlety and artistry not seen in any other wood, hence its lustrous reputation.</p>
+			<h5>Hornbeam</h5>
+			<p>Hornbeam, a fine-tuned and sentient wand, selects for its life mate the talented witch or wizard with a single, pure passion. Hornbeam wands adapt more quickly to their owner’s style of magic and become so personalized, so quickly, that others will find them extremely difficult to use. They likewise absorb their owner’s code of honor and will refuse to perform acts - good or ill - conflicting with their master’s principles.</p>
+			<h5>Vine</h5>
+			<p>Vine wands are among the less common types, and their ideal owners are nearly always those witches or wizards who seek a greater purpose, have a vision beyond the ordinary and frequently astound those who think they know them best. Vine wands seem strongly attracted by personalities with hidden depths, and often instantly detect a match.</p>
+			<h5>Walnut</h5>
+			<p>Walnut wands are often found in the hands of highly intelligent magical innovators and inventors; this is a handsome wood possessed of unusual versatility and adaptability. Walnut wands will, once subjugated, perform any task its owner desires, provided that the user is of sufficient brilliance. This makes for a truly lethal weapon in the hands of a witch or wizard of no conscience, for the wand and the wizard may feed on each other in an unhealthy manner.</p>
+		</description>
+		<setters>
+			<set name="short">Magical Theory (Arcana), Investigation, 1 Language</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<select type="Language" name="Language (Bookworm)" number="1" supports="Standard||Exotic" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select type="List" name="Wand Wood (Personality Trait)">
+				<item id="1">Beech</item>
+				<item id="2">Hornbeam</item>
+				<item id="3">Vine</item>
+				<item id="4">Walnut</item>
+			</select>
+			<select type="List" name="Wand Core (Ideal)">
+				<item id="1">Unicorn Hair: Creativity. The world is in need of new ideas and bold action.</item>
+				<item id="2">Dragon Heartstring: Knowledge. The path to power and self-improvement is through knowledge.</item>
+				<item id="3">Phoenix Feather: Self-improvement. The goal of a life of study is the betterment of oneself.</item>
+			</select>
+			<select type="List" name="Wand Length (Bond)">
+				<item id="1">10": I want my life's work to be magical textbooks related to a specific field.</item>
+				<item id="2">12.5": I've been searching my whole life for the answer to a certain question.</item>
+				<item id="3">13": My family has an ancient text of terrible secrets that must not fall into the wrong hands.</item>
+			</select>
+			<select type="List" name="Wand Flexibility (Flaw)">
+				<item id="1">Unyielding: Uncovering knowledge is worth any price, even a piece of my own humanity.</item>
+				<item id="2">Reasonably Supple: I let my need to win arguments overshadow friendships and harmony</item>
+				<item id="3">Pliant: I overlook obvious solutions in favor of complicated ones.</item>
+			</select>
+		</rules>
+	</element>
+	
+	<element name="Optional Feature: Teacher's Pet" type="Background Feature" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_FEATURE_TEACHERS_PET">
+		<supports>Background Feature, Optional Background Feature</supports>
+		<description>
+			<p>Because you are a bright individual, teachers and those in positions of authority are more likely to interpret your actions and intentions favorably. You might be in a better position to enlist their help, or have plausible deniability based on your academic reputation.</p>
+		</description>
+		<sheet alt="Teacher's Pet" />
+	</element>
+	<element name="Optional Feature: Prodigy" type="Background Feature" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_FEATURE_PRODIGY">
+		<supports>Background Feature, Optional Background Feature</supports>
+		<description>
+			<p>You've always exhibited unusual control over your magical abilities. Where others struggle, things come naturally to you. The ease with which you gain knowledge or skills sometimes results in arrogance or naivete. You've also been burdened with greater expectations and if you entered wizarding school early or skipped a year, you're accustomed to being younger than your peers.</p>
+		</description>
+		<sheet alt="Prodigy" />
+	</element>
+</elements>

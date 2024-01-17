@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Klutz</name>
+		<description>Klutz Background</description>
+		<update version="0.0.1">
+			<file name="background-klutz.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/backgrounds/background-klutz.xml" />
+		</update>
+	</info>
+	<element name="Klutz" type="Background" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_KLUTZ">
+		<requirements>ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_WILLPOWER|ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_TECHNIQUE|ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_INTELLECT</requirements>
+		<description>
+			<p>Your childhood has always been spent outdoors, climbing trees or capturing insects. You've always felt an intense connection to all forms of life around you, and that drives you to be considerate towards other beings. Going without fresh air leaves you feeling trapped, but some greenery and a ray of sunshine is all it takes to put you in a great mood.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Medicine, Perception</li>
+				<li><strong>Equipment:</strong>A lucky charm, and a package of plasters</li>
+			</ul>
+			<div element="ID_WAW_BACKGROUND_FEATURE_WALKING_DISASTER" />
+
+			<h3>Wand Personalities</h3>
+			<h5>Ash</h5>
+			<p>The ash wand clings to its one true master and ought not to be passed on or gifted from the original owner, because it will lose power and skill. Witches and wizards best suited to ash wands are not lightly swayed from their beliefs or purposes. However, a brash or over-confident witch or wizard will be disappointed by its effects. The ideal owner may be stubborn, and will certainly be courageous, but never crass or arrogant.</p>
+			<h5>Cypress</h5>
+			<p>Cypress wands are associated with nobility and dying a heroic death, historically. Fortunately, the possessors of cypress wands are rarely called upon to lay down their lives, but doubtless many of them would do so if required. Wands of cypress find their soulmates among the brave, the bold and the self-sacrificing: those who are unafraid to confront the shadows in their own and others’ natures.</p>
+			<h5>Willow</h5>
+			<p>Willow is an uncommon wand wood with healing power, and their ideal owner often has some (usually unwarranted) insecurity, however well they may try and hide it. With a handsome appearance and well-founded reputation for enabling advanced, non-verbal magic, the willow wands have consistently selected those of greatest potential, rather than those who feel they have little to learn.</p>
+		</description>
+		<setters>
+			<set name="short">Medicine, Perception</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select type="List" name="Wand Wood (Personality Trait)">
+				<item id="1">Ash</item>
+				<item id="2">Cypress Oak</item>
+				<item id="3">Willow</item>
+			</select>
+			<select type="List" name="Wand Core (Ideal)">
+				<item id="1">Unicorn Hair: Greater Good. The most noble cause is to lay down our lives to defend others.</item>
+				<item id="2">Dragon Heartstring: Respect. All people—rich or poor, powerful or weak, magical or muggle—deserve respect.</item>
+				<item id="3">Phoenix Feather: Sincerity. There's no good pretending to be something I'm not.</item>
+			</select>
+			<select type="List" name="Wand Length (Bond)">
+				<item id="1">9": Someone is depending on me, and I'll never forgive myself if I let them down.</item>
+				<item id="2">12.5": I have to prove to that I'm not a disappointment to my family, mentors or peers.</item>
+				<item id="3">14": I will be fiercely loyal to anyone who doesn't see me for my faults, but for who I am.</item>
+			</select>
+			<select type="List" name="Wand Flexibility (Flaw)">
+				<item id="1">Inflexible: I am slow to trust that others' words are sincere, because of some bad experiences.</item>
+				<item id="2">Slightly Pliant: I follow the rules, even if they aren't what's best.</item>
+				<item id="3">Very Supple: I'm always putting my foot in my mouth, invariably insulting or embarrassing others.</item>
+			</select>
+		</rules>
+	</element>
+	<element name="Optional Feature: Walking Disaster" type="Background Feature" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_FEATURE_WALKING_DISASTER">
+		<supports>Background Feature, Optional Background Feature</supports>
+		<description>
+			<p>You've seen so many situations go completely awry that you've started being able to predict all the ways things can go wrong. If you're looking to hinder something or bring about a dangerous accident, you'll have no shortage of ideas.</p>
+		</description>
+		<sheet alt="Walking Disaster" />
+	</element>
+</elements>

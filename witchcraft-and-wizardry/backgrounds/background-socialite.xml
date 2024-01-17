@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Socialite</name>
+		<description>Socialite Background</description>
+		<update version="0.0.1">
+			<file name="background-socialite.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/backgrounds/background-socialite.xml" />
+		</update>
+	</info>
+	<element name="Socialite" type="Background" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_SOCIALITE">
+		<requirements>ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_WILLPOWER|ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_TECHNIQUE|ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_INTELLECT</requirements>
+		<description>
+			<p>Whether your fondest childhood memories were at your local team's matches or you just discovered the sport upon arriving at Hogwarts, you love quidditch. It makes complete sense, given your competitive streak and affinity for rough-housing. You use your common sense and ability to take initiative to get by.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Deception, Persuasion</li>
+				<li><strong>Equipment:</strong>A ring with a family crest or another type of heirloom jewelry, and a peacock feather quill</li>
+			</ul>
+			<div element="ID_WAW_BACKGROUND_FEATURE_RUMOR_MONGER" />
+			<div element="ID_WAW_BACKGROUND_FEATURE_FOLLOWER" />
+
+			<h3>Wand Personalities</h3>
+			<h5>Alder</h5>
+			<p>While the wood itself is unyielding, the ideal owner of an alder wand is not stubborn or obstinate, but often helpful, considerate and most likeable. When an alder wand is happily placed, it becomes a magnificent, loyal helpmate. Of all wand types, alder is best suited to non-verbal spell work, whence comes its reputation for being suitable only for the most advanced witches and wizards.</p>
+			<h5>Apple</h5>
+			<p>Applewood wands are not made in great numbers. They are powerful and best suited to an owner of high aims and ideals, as this wood mixes poorly with Dark magic. It is said that the possessor of an apple wand will be well-loved and long-lived, and wizards of great personal charm often find their perfect match in an applewood wand.</p>
+			<h5>Aspen</h5>
+			<p>Wand-quality aspen wood is prized for its stylish resemblance to ivory and usually outstanding charmwork. The proper owner of the aspen wand is often an accomplished duellist, for the aspen wand is particularly suited to martial magic. An infamous and secretive eighteenth-century duelling club, the Silver Spears, only admitted owners of aspen wands. Owners are generally strong-minded and determined, likely to be attracted by quests; this is a wand for revolutionaries.</p>
+			<h5>Pear</h5>
+			<p>The golden-toned wood of pear produces wands of splendid magical powers. Possessors of pear wands are usually popular and well-respected, and no one knows of a single instance where a pear wand was in the possession of a Dark witch or wizard. Pear wands are among the most resilient, and they commonly keep a remarkable appearance of newness, even after many years of hard use.</p>
+		</description>
+		<setters>
+			<set name="short">Deception, Persuasion</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select type="List" name="Wand Wood (Personality Trait)">
+				<item id="1">Alder</item>
+				<item id="2">Apple</item>
+				<item id="3">Aspen</item>
+				<item id="4">Pear</item>
+			</select>
+			<select type="List" name="Wand Core (Ideal)">
+				<item id="1">Unicorn Hair: People. I like seeing smiles on people’s faces. That’s all that matters.</item>
+				<item id="2">Dragon Heartstring: Might. The strong are meant to lead and the weak will follow.</item>
+				<item id="3">Phoenix Feather: Destiny. Nothing and no one can steer me away from my higher calling.</item>
+			</select>
+			<select type="List" name="Wand Length (Bond)">
+				<item id="1">10": I want to be famous, whatever it takes.</item>
+				<item id="2">12": Family and institutions are most important, friends and sycophants come and go.</item>
+				<item id="3">13": It is my duty to lead and inspire others.</item>
+			</select>
+			<select type="List" name="Wand Flexibility (Flaw)">
+				<item id="1">Solid: I'm never satisfied with what I have, I always want more.</item>
+				<item id="2">Reasonably Springy: I secretly believe that everyone is beneath me.</item>
+				<item id="3">Swishy: I'm a (misguided) romantic and a sucker for a pretty face.</item>
+			</select>
+		</rules>
+	</element>
+	<element name="Optional Feature: Rumor-Monger" type="Background Feature" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_FEATURE_RUMOR_MONGER">
+		<supports>Background Feature, Optional Background Feature</supports>
+		<description>
+			<p>Your skill at making connections has earned you inroads with people in the know. When you attempt to uncover a particularly juicy secret or a dangerous rumor, your sources may be able to help you or point you in the right direction.</p>
+		</description>
+		<sheet alt="Rumor-Monger" />
+	</element>
+	<element name="Optional Feature: Follower" type="Background Feature" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_FEATURE_FOLLOWER">
+		<supports>Background Feature, Optional Background Feature</supports>
+		<description>
+			<p>Instead of building social status through the force of your own personality, you've found success by following someone who is more influential or popular than you are. You know how to stay useful to them and use their reputation to influence others. Whether you see yourself as a hero's sidekick or a bully's sycophant, you're happy to watch from the sidelines and be second best.</p>
+		</description>
+		<sheet alt="Follower" />
+	</element>
+</elements>

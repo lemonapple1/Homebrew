@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Artist</name>
+		<description>Artist Background</description>
+		<update version="0.0.1">
+			<file name="background-artist.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/backgrounds/background-artist.xml" />
+		</update>
+	</info>
+	<element name="Artist" type="Background" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_ARTIST">
+		<requirements>ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_WILLPOWER|ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_TECHNIQUE|ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_INTELLECT</requirements>
+		<description>
+			<p>You see yourself as an observer of the world around you, capturing little glimpses of that world. You express yourself through those glimpses, satisfying your need to create and communicating your own unique perspective. Your chosen medium might be magically developed moving photographs, a painted portrait with a personality, a bewitched sculpture or even enchanted cartography.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Insight, Performance</li>
+				<li><strong>Languages:</strong>One common of your choice</li>
+				<li><strong>Equipment:</strong>The tools of the art medium of your choice (e.g. painter's supplies, musical instrument, costume, etc.), and a sketch pad with charcoal sticks</li>
+			</ul>
+			<div element="ID_WAW_BACKGROUND_FEATURE_APPRENTICE" />
+			<div element="ID_WAW_BACKGROUND_FEATURE_DRAMATIC_ENTRANCE" />
+			<div element="ID_WAW_BACKGROUND_FEATURE_PERFORMER" />
+
+			<h3>Wand Personalities</h3>
+			<h5>Pine</h5>
+			<p>Pine wands always choose an independent, individual master who may be perceived as a loner, intriguing and perhaps mysterious. Pine wands enjoy being used creatively, and unlike some others, will adapt unprotestingly to new methods and spells. Many wandmakers insist that pine wands are able to detect, and perform best for, owners who are destined for long lives. The pine wand is one of those that are sensitive to non-verbal magic.</p>
+			<h5>Red Oak</h5>
+			<p>You will often hear the ignorant say that red oak is an infallible sign of its owner’s hot temper. In fact, the true match for a red oak wand is possessed of unusually fast reactions, making it a perfect duelling wand. Less common than English oak, its ideal master is light of touch, quick-witted and adaptable, often the creator of distinctive, trademark spells, and a good man or woman in a fight.</p>
+			<h5>Sycamore</h5>
+			<p>The sycamore makes a questing wand, eager for experience and losing brilliance in mundane activities. These may combust if allowed to become ‘bored,’ and many aging witches and wizards are disconcerted to find their wand bursting into flame as they ask it, one more time, to fetch their slippers. The sycamore’s ideal owner is curious, vital and adventurous, and with such an owner, it demonstrates a highly-prized capacity to learn and adapt.</p>
+		</description>
+		<setters>
+			<set name="short">Insight, Performance, 1 Common Language</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			<select type="Language" name="Language (Artist)" number="1" supports="Standard" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select type="List" name="Wand Wood (Personality Trait)">
+				<item id="1">Pine</item>
+				<item id="2">Red Oak</item>
+				<item id="3">Sycamore</item>
+			</select>
+			<select type="List" name="Wand Core (Ideal)">
+				<item id="1">Unicorn Hair: Beauty. When I create, I make the world better than it was.</item>
+				<item id="2">Dragon Heartstring: People. I want to make an impact on everyone who experiences my work.</item>
+				<item id="3">Phoenix Feather: Honesty. Art should reflect the soul; it should come from within and reveal who we really are.</item>
+			</select>
+			<select type="List" name="Wand Length (Bond)">
+				<item id="1">10": I owe my mentors a great debt for shaping me into the person I am today.</item>
+				<item id="2">11.5": I have a family, but I have no idea where they are. One day, I hope to see them again.</item>
+				<item id="3">13": My camera/easel/instrument is my most treasured possession, and it reminds me of someone I love.</item>
+			</select>
+			<select type="List" name="Wand Flexibility (Flaw)">
+				<item id="1">Reasonably Firm: In fact, the world does revolve around me.</item>
+				<item id="2">Slightly Swishy: There's no room for caution in a life lived to the fullest.</item>
+				<item id="3">Quite Yielding: I'll do anything to win fame and renown.</item>
+			</select>
+		</rules>
+	</element>
+	
+	<element name="Optional Feature: Apprentice" type="Background Feature" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_FEATURE_APPRENTICE">
+		<supports>Background Feature, Optional Background Feature</supports>
+		<description>
+			<p>Although you're not yet able to create original works, you have enough knowledge and rudimentary skills to begin an apprenticeship under a mentor, should you find one willing to teach you. Additionally, you've become practiced in hand-eye coordination and precise work.</p>
+		</description>
+		<sheet alt="Apprentice" />
+	</element>
+	<element name="Optional Feature: Dramatic Entrance" type="Background Feature" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_FEATURE_DRAMATIC_ENTRANCE">
+		<supports>Background Feature, Optional Background Feature</supports>
+		<description>
+			<p>Your flair for the dramatic means you can always do things in the most attention-grabbing way as possible. This often makes for an excellent distraction or starts to build a crowd.</p>
+		</description>
+		<sheet alt="Dramatic Entrance" />
+	</element>
+	<element name="Optional Feature: Performer" type="Background Feature" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_FEATURE_PERFORMER">
+		<supports>Background Feature, Optional Background Feature</supports>
+		<description>
+			<p>Even moreso than visual artists, you're compelled to express yourself, your experiences and your emotions. While you aren't immune to bouts of uncertainty and performance anxiety, you generally seem to be quite extraverted. You've found your calling in at least one of the performing arts: singing, dancing, playing an instrument or magical theater.</p>
+		</description>
+		<sheet alt="Performer" />
+	</element>
+</elements>

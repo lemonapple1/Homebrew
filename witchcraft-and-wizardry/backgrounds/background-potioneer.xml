@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Potioneer</name>
+		<description>Potioneer Background</description>
+		<update version="0.0.1">
+			<file name="background-potioneer.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/backgrounds/background-potioneer.xml" />
+		</update>
+	</info>
+	<element name="Potioneer" type="Background" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_POTIONEER">
+		<requirements>ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_WILLPOWER|ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_TECHNIQUE|ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_INTELLECT</requirements>
+		<description>
+			<p>More than once, you've been accused of perfectionism, but your attention to detail allows you to succeed where others fail. This trait shines when you turn your focus to brewing potions. You approach situations with drive and vigor, and live with strong conviction in your values and principles.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Herbology (Nature), Potion-Making (Religion)</li>
+				<li><strong>Tool Proficiencies:</strong>Potioneer's Kit</li>
+				<li><strong>Equipment:</strong>Potioneer's Kit, and a muggle notebook with a ballpoint pen</li>
+			</ul>
+			<div element="ID_WAW_BACKGROUND_FEATURE_REGULAR_CUSTOMER" />
+
+			<h3>Wand Personalities</h3>
+			<h5>Acacia</h5>
+			<p>This very unusual wand wood creates tricky wands that often refuse to produce magic for any but their owner, and also withholds their best effects from all but those most gifted. This makes them difficult to place, and wandmakers often keep only a small stock for those witches or wizards of sufficient subtlety, for acacia is not suited to what is commonly known as ‘bangs-and-smells’ magic. When well-matched, an acacia wand matches any for power, though it is often underrated due to the peculiarity of its temperament.</p>
+			<h5>Elm</h5>
+			<p>Elm wands prefer owners with presence, magical dexterity and a certain native dignity. Although some wizards have spread rumors that elm wands’ magic requires blood purity, there have been perfect matches of elm wands who are Muggle-borns. Of all wand woods, elm produces the fewest accidents, the least foolish errors, and the most elegant charms and spells; these are sophisticated wands, capable of highly advanced magic in the right hands.</p>
+			<h5>Larch</h5>
+			<p>Larch wands have a reputation for instilling confidence and courage in the user. The celebrated wandmaker Garrick Ollivander found that larch always created wands of hidden talents and unexpected effects, which likewise describes the master who deserves it. It is often the case that the witch or wizard who belongs to the larch wand may never realize the full extent of their considerable talents until paired with it, but that they will then make an exceptional match.</p>
+			<h5>Laurel</h5>
+			<p>It is said a laurel wand cannot perform a dishonourable act, although in the owner’s quest for glory, laurel wands can perform powerful and sometimes lethal magic. The laurel wand seems unable to tolerate laziness in a possessor, and in that case, can be won away from their owner most easily. Otherwise, it will cleave happily to its first match and issue a spontaneous zap if another attempts to steal it.</p>
+		</description>
+		<setters>
+			<set name="short">Herbology (Nature), Potion-Making (Religion)</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<grant type="Proficiency" id="ID_WAW_PROFICIENCY_TOOL_POTIONEERS_KIT" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select type="List" name="Wand Wood (Personality Trait)">
+				<item id="1">Acacia</item>
+				<item id="2">Elm</item>
+				<item id="3">Larch</item>
+				<item id="4">Laurel</item>
+			</select>
+			<select type="List" name="Wand Core (Ideal)">
+				<item id="1">Unicorn Hair: Tradition. The ways of the past must never be forgotten, for they teach us who we are.</item>
+				<item id="2">Dragon Heartstring: Aspiration. I work hard to be recognized as the best there is at my craft.</item>
+				<item id="3">Phoenix Feather: Live and Let Live. Meddling in the affairs of others only causes trouble.</item>
+			</select>
+			<select type="List" name="Wand Length (Bond)">
+				<item id="1">9": I will face any challenge to win the approval of my family.</item>
+				<item id="2">10.5": I idolize legendary wizards and measure my deeds against theirs.</item>
+				<item id="3">12": I am the only one carrying on my name, and it is up to me to immortalize it in history.</item>
+			</select>
+			<select type="List" name="Wand Flexibility (Flaw)">
+				<item id="1">Hard: I'm convinced of my work's significance, and blind to my shortcomings and the risk of failure.</item>
+				<item id="2">Barely Yielding: Once I pick a goal, I become obsessed with it to the detriment of everything else in my life.</item>
+				<item id="3">Quite Flexible: I'm horribly jealous of anyone who outshines my work. Everywhere I go, I'm surrounded by rivals.</item>
+			</select>
+		</rules>
+	</element>
+	<element name="Optional Feature: Regular Customer" type="Background Feature" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_FEATURE_REGULAR_CUSTOMER">
+		<supports>Background Feature, Optional Background Feature</supports>
+		<description>
+			<p>You're a familiar face to any prominent wizarding apothecary, and as a frequent customer, you get access to new and unusual inventory that potion supplies stores may not want to open up to the public. You've also picked up one common and one uncommon potion recipe of your choice.</p>
+		</description>
+		<sheet alt="Regular Customer" />
+	</element>
+</elements>
