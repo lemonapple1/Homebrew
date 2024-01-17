@@ -13,8 +13,9 @@
 		<file name="languages.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/languages.xml" />
 		<file name="source.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/source.xml" />
 		<file name="spells.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/spells.xml" />
-		<file name="tools.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/items/tools.xml" />
 		<file name="hogwarts.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/races/hogwarts.xml" />
+		<file name="items-tools.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/items/items-tools.xml" />
+		<file name="items-armor.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/items/items-armor.xml" />
 
 		<file name="background-artist.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/backgrounds/background-artist.xml" />
 		<file name="background-bookworm.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/backgrounds/background-bookworm.xml" />

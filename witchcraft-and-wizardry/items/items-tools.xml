@@ -3,7 +3,7 @@
 	<info>
 		<name>Witchcraft and Wizardry: Tools</name>
 		<update version="0.0.1">
-			<file name="tools.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/items/tools.xml" />
+			<file name="items-tools.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/items/items-tools.xml" />
 		</update>
 	</info>
 	<element name="Astronomer's Tools" type="Item" source="Witchcraft and Wizardry" id="ID_WAW_TOOL_ASTRONOMERS_TOOLS">
@@ -130,8 +130,6 @@
 			</div>
 		</description>
 	</element>
-
-
 	<element name="Tool Proficiency (Vehicles (Broomstick))" type="Proficiency" source="Witchcraft and Wizardry" id="ID_WAW_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_BROOMSTICK">
 		<supports>Tool, Vehicles</supports>
 		<sheet alt="Vehicles (Broomstick)" />
