@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Witchcraft and Wizardry: Companions</name>
+		<update version="0.0.1">
+			<file name="companions.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/companions.xml" />
+		</update>
+	</info>
+
+	<element name="Pet Bat" type="Companion" source="Witchcraft and Wizardry" id="ID_WAW_COMPANION_PET_BAT">
+		<supports>Pet</supports>
+		<description />
+		<setters>
+			<set name="strength">1</set>
+			<set name="dexterity">16</set>
+			<set name="constitution">9</set>
+			<set name="intelligence">3</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">4</set>
+			<set name="ac">13</set>
+			<set name="hp">1 (1d4-1)</set>
+			<set name="speed">10 ft., fly 60 ft.</set>
+			<set name="senses">blindsight 60 ft.</set>
+			<set name="languages">—</set>
+			<set name="type">Beast</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">0</set>
+			<set name="traits">ID_WOTC_PHB_COMPANION_TRAIT_BAT_ECHOLOCATION,ID_WAW_COMPANION_TRAIT_PET_BAT_FLYBY,ID_WOTC_PHB_COMPANION_TRAIT_BAT_KEEN_HEARING</set>
+			<set name="actions">ID_WAW_COMPANION_ACTION_PET_BAT_BITE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" />
+			<stat name="companion:hp:max" value="1" bonus="base" />
+			<stat name="companion:speed" value="10" bonus="base" />
+			<stat name="companion:speed:fly" value="60" bonus="base" />
+		</rules>
+	</element>
+	<element name="Flyby" type="Companion Trait" source="Witchcraft and Wizardry" id="ID_WAW_COMPANION_TRAIT_PET_BAT_FLYBY">
+		<description>
+			<p>The bat doesn't provoke opportunity attacks when it flies out of an enemy's reach.</p>
+		</description>
+		<sheet>
+			<description>The bat doesn't provoke opportunity attacks when it flies out of an enemy's reach.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="Witchcraft and Wizardry" id="ID_WAW_COMPANION_ACTION_PET_BAT_BITE">
+		<description>
+			<p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Pet Cat" type="Companion" source="Witchcraft and Wizardry" id="ID_WAW_COMPANION_PET_CAT">
+		<supports>Pet</supports>
+		<description />
+		<setters>
+			<set name="strength">3</set>
+			<set name="dexterity">15</set>
+			<set name="constitution">10</set>
+			<set name="intelligence">6</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">7</set>
+			<set name="ac">12</set>
+			<set name="hp">2 (1d4)</set>
+			<set name="speed">40 ft., climb 30 ft.</set>
+			<set name="languages">—</set>
+			<set name="skills">Perception +3, Stealth +4</set>
+			<set name="type">Beast</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">0</set>
+			<set name="traits">ID_WAW_COMPANION_TRAIT_PET_CAT_HUNTING_INSTINCTS,ID_WOTC_PHB_COMPANION_TRAIT_CAT_KEEN_SMELL</set>
+			<set name="actions">ID_WAW_COMPANION_ACTION_PET_CAT_CLAWS</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" />
+			<stat name="companion:hp:max" value="2" bonus="base" />
+			<stat name="companion:speed" value="40" bonus="base" />
+			<stat name="companion:speed:climb" value="30" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Hunting Instincts" type="Companion Trait" source="Witchcraft and Wizardry" id="ID_WAW_COMPANION_TRAIT_PET_CAT_HUNTING_INSTINCTS">
+		<description>
+			<p>The cat can follow or patrol for a specific target. When doing so, it has advantage on Dexterity (Stealth) checks.</p>
+		</description>
+		<sheet>
+			<description>The cat can follow or patrol for a specific target. When doing so, it has advantage on Dexterity (Stealth) checks.</description>
+		</sheet>
+	</element>
+	<element name="Claws" type="Companion Action" source="Witchcraft and Wizardry" id="ID_WAW_COMPANION_ACTION_PET_CAT_CLAWS">
+		<description>
+			<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 slashing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 slashing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Pet Toad" type="Companion" source="Witchcraft and Wizardry" id="ID_WAW_COMPANION_PET_TOAD">
+		<supports>Pet</supports>
+		<description />
+		<setters>
+			<set name="strength">1</set>
+			<set name="dexterity">13</set>
+			<set name="constitution">10</set>
+			<set name="intelligence">2</set>
+			<set name="wisdom">8</set>
+			<set name="charisma">3</set>
+			<set name="ac">11</set>
+			<set name="hp">2 (1d4)</set>
+			<set name="speed">20 ft., swim 20 ft.</set>
+			<set name="senses">darkvision 30 ft.</set>
+			<set name="languages">—</set>
+			<set name="skills">Perception +1, Stealth +3</set>
+			<set name="type">Beast</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">0</set>
+			<set name="traits">ID_WOTC_PHB_COMPANION_TRAIT_FROG_AMPHIBIOUS,ID_WOTC_PHB_COMPANION_TRAIT_FROG_STANDING_LEAP</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="11" />
+			<stat name="companion:hp:max" value="1" bonus="base" />
+			<stat name="companion:speed" value="20" bonus="base" />
+			<stat name="companion:speed:swim" value="20" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Pet Owl" type="Companion" source="Witchcraft and Wizardry" id="ID_WAW_COMPANION_PET_OWL">
+		<supports>Pet</supports>
+		<description />
+		<setters>
+			<set name="strength">3</set>
+			<set name="dexterity">13</set>
+			<set name="constitution">8</set>
+			<set name="intelligence">4</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">7</set>
+			<set name="ac">11</set>
+			<set name="hp">1 (1d4-1)</set>
+			<set name="speed">5 ft., fly 60 ft.</set>
+			<set name="senses">darkvision 120 ft.</set>
+			<set name="languages">—</set>
+			<set name="skills">Perception +3, Stealth +3</set>
+			<set name="type">Beast</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">0</set>
+			<set name="traits">ID_WOTC_PHB_COMPANION_TRAIT_OWL_FLYBY,ID_WOTC_PHB_COMPANION_TRAIT_OWL_KEEN_HEARING_AND_SIGHT,ID_WAW_COMPANION_TRAIT_PET_OWL_MAGICAL_POST</set>
+			<set name="actions"></set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="11" />
+			<stat name="companion:hp:max" value="1" bonus="base" />
+			<stat name="companion:speed" value="5" bonus="base" />
+			<stat name="companion:speed:fly" value="60" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Magical Post" type="Companion Trait" source="Witchcraft and Wizardry" id="ID_WAW_COMPANION_TRAIT_PET_OWL_MAGICAL_POST">
+		<description>
+			<p>When given a note, letter, or package, the owl will magically know the location of the recipient and fly to deliver the letter.</p>
+		</description>
+		<sheet>
+			<description>When given a note, letter, or package, the owl will magically know the location of the recipient and fly to deliver the letter.</description>
+		</sheet>
+	</element>
+
+	<element name="Pet Rat" type="Companion" source="Witchcraft and Wizardry" id="ID_WAW_COMPANION_PET_RAT">
+		<supports>Pet</supports>
+		<description />
+		<setters>
+			<set name="strength">2</set>
+			<set name="dexterity">15</set>
+			<set name="constitution">9</set>
+			<set name="intelligence">5</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">4</set>
+			<set name="ac">12</set>
+			<set name="hp">1 (1d4-1)</set>
+			<set name="speed">30 ft.</set>
+			<set name="senses">darkvision 30 ft.</set>
+			<set name="languages">—</set>
+			<set name="type">Beast</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">0</set>
+			<set name="traits">ID_WOTC_PHB_COMPANION_TRAIT_RAT_KEEN_SMELL</set>
+			<set name="actions">ID_WAW_COMPANION_ACTION_PET_RAT_BITE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="10" />
+			<stat name="companion:hp:max" value="1" bonus="base" />
+			<stat name="companion:speed" value="20" bonus="base" />
+		</rules>
+	</element>
+	<element name="Bite" type="Companion Action" source="Witchcraft and Wizardry" id="ID_WAW_COMPANION_ACTION_PET_RAT_BITE">
+		<description>
+			<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Pet Puffskein" type="Companion" source="Witchcraft and Wizardry" id="ID_WAW_COMPANION_PET_PUFFSKEIN">
+		<description />
+		<setters>
+			<set name="strength">1</set>
+			<set name="dexterity">12</set>
+			<set name="constitution">8</set>
+			<set name="intelligence">5</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">14</set>
+			<set name="ac">11 (natural armor)</set>
+			<set name="hp">1 (1d4-1)</set>
+			<set name="speed">20 ft.</set>
+			<set name="languages">—</set>
+			<set name="type">Beast</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">0</set>
+			<set name="traits">ID_WAW_COMPANION_TRAIT_PET_PUFFSKEIN_FLUFFY,ID_WAW_COMPANION_TRAIT_PET_PUFFSKEIN_PREHENSILEE_TONGUE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="11" />
+			<stat name="companion:hp:max" value="1" bonus="base" />
+			<stat name="companion:speed" value="20" bonus="base" />
+		</rules>
+	</element>
+	<element name="Fluffy" type="Companion Trait" source="Witchcraft and Wizardry" id="ID_WAW_COMPANION_TRAIT_PET_PUFFSKEIN_FLUFFY">
+		<description>
+			<p>The puffskein appears to be a living ball of fluff; its cuteness might be distracting to some, much like carrying around an adorable kitten.</p>
+		</description>
+		<sheet>
+			<description>The puffskein appears to be a living ball of fluff; its cuteness might be distracting to some, much like carrying around an adorable kitten.</description>
+		</sheet>
+	</element>
+	<element name="Prehensile Tongue" type="Companion Trait" source="Witchcraft and Wizardry" id="ID_WAW_COMPANION_TRAIT_PET_PUFFSKEIN_PREHENSILEE_TONGUE">
+		<description>
+			<p>The puffskein has a disproportionately long tongue that it can use to grab or manipulate small objects.</p>
+		</description>
+		<sheet>
+			<description>The puffskein has a disproportionately long tongue that it can use to grab or manipulate small objects.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Witchcraft and Wizardry: Languages</name>
+		<update version="0.0.1">
+			<file name="languages.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/languages.xml" />
+		</update>
+	</info>
+	<element name="Gobbledegook" type="Language" source="Witchcraft and Wizardry" id="ID_WAW_LANGUAGE_GOBBLEDEGOOK">
+		<supports>Exotic</supports>
+		<description>
+			<p>Native language of goblins.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Goblins</set>
+			<set name="script">Gobbledegook</set>
+		</setters>
+	</element>
+	<element name="Mermish" type="Language" source="Witchcraft and Wizardry" id="ID_WAW_LANGUAGE_MERMISH">
+		<supports>Exotic</supports>
+		<description>
+			<p>The spoken language of merpeople.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Merpeople</set>
+			<set name="script">Mermish</set>
+		</setters>
+	</element>
+	<element name="Parseltongue" type="Language" source="Witchcraft and Wizardry" id="ID_WAW_LANGUAGE_PARSELTONGUE">
+		<supports>Exotic</supports>
+		<description>
+			<p>A language used to communicate with serpents.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Snakes, Serpents</set>
+			<set name="script">Parseltongue</set>
+		</setters>
+	</element>
+	<element name="Troll" type="Language" source="Witchcraft and Wizardry" id="ID_WAW_LANGUAGE_TROLL">
+		<supports>Exotic</supports>
+		<description>
+			<p>The native language of trolls.</p>
+		</description>
+		<setters>
+			<set name="exotic">false</set>
+			<set name="speakers">Trolls</set>
+			<set name="script">Trollish</set>
+		</setters>
+	</element>
+</elements>
