@@ -7,7 +7,7 @@
 			<file name="background-dreamer.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/backgrounds/background-dreamer.xml" />
 		</update>
 	</info>
-	<element name="Dreamer" type="Background" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_BOOKWORM">
+	<element name="Dreamer" type="Background" source="Witchcraft and Wizardry" id="ID_WAW_BACKGROUND_DREAMER">
 		<requirements>ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_WILLPOWER|ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_TECHNIQUE|ID_WAW_CLASS_FEATURE_CASTER_SPELLCASTING_INTELLECT</requirements>
 		<description>
 			<p>You've always been known to have your nose in a book, whether obsessing over homework or escaping reality into a world of fiction. You often solve your problems through research and study. Because you absorb so much from others, you've learned things, traveled places, felt emotions, and seen wonders far beyond your own experiences.</p>
