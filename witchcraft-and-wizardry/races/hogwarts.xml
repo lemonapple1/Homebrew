@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Witchcraft and Wizardry: Hogwart's Houses</name>
+		<update version="0.0.1">
+			<file name="hogwarts.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/races/hogwarts.xml" />
+		</update>
+	</info>
+
+	<element name="Hogwarts Student (Gryffindor)" type="Race" source="Witchcraft and Wizardry" id="ID_WAW_RACE_GRYFFINDOR">
+		<description>
+			<p class="flavor">With a lion as its crest, Gryffindor is the house which most values the virtues of determination, courage, and chivalry. Some call these traits recklessness or "pointless heroics," but a Gryffindor is sure to take action. Gryffindor's house colors are red and gold.</p>
+			<h4>CHAMPIONS OF JUSTICE</h4>
+			<p>Gryffindors trust their moral intuitions and have a need and a drive to live by them. They feel what’s right in their gut, and that matters and guides them. It feels immoral to ignore that.</p>
+			<p class="indent">However, just because they operate on what “feels right,” that doesn’t mean Gryffindors are all impetuous, emotional hellions. Gryffindors can still be intelligent and deliberate, weighing their decisions and moralities carefully.</p>
+			<h4>FIGHTING SPIRIT</h4>
+			<p>Gryffindors charge. They meet the world head-on and challenge it to do its worst. Gryffindors are honest, brash, and bold in pursuit of things they care about. Known for their bravery, it is almost a moral matter to stay true to themselves in any situation.</p>
+			<h4>GRYFFINDOR TRAITS</h4>
+			<p>Through their camaraderie, Gryffindors bolster each other's confidence and endeavors.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score, Charisma score, and one other ability score of choice increase by 1.</p>
+			<p class="indent"><strong><em>Bravehearted.</em></strong> You have advantage on saving throws against being frightened from any source other than a Dementor.</p>
+			<p class="indent"><strong><em>True Gryffindor.</em></strong> In times of dire need, the Sword of Gryffindor may present itself to you.</p>
+			<p class="indent"><strong><em>Feat.</em></strong> You gain one feat of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Adran, Aelar, Aramil, Arannis, Aust, Beiro, Berrian, Carric, Enialis, Erdan, Erevan, Galinndan, Hadarai, Heian, Himo, Immeral, Ivellios, Laucian, Mindartis, Paelias, Peren, Quarion, Riardon, Rolen, Soveliss, Thamior, Tharivol, Theren, Varis</set>
+			<set name="names" type="female">Adrie, Althaea, Anastrianna, Andraste, Antinua, Bethrynna, Birel, Caelynn, Drusilia, Enna, Felosial, Ielenia, Jelenneth, Keyleth, Leshanna, Lia, Meriele, Mialee, Naivara, Quelenna, Quillathe, Sariel, Shanairra, Shava, Silaqui, Theirastra, Thia, Vadania, Valanthe, Xanaphia</set>
+			<set name="names" type="child">Ara, Bryn, Del, Eryn, Faen, Innil. Lael, Mella, Naill, Naeris, Phann, Rael, Rinn, Sai, Syllin, Thia, Vall</set>
+			<set name="names" type="family">Amakiir, Amastacia, Galanodel, Holimion, Ilphelkiir, Liadon, Meliamne, Nai'lo, Siannodel, Xiloscient</set>
+			<set name="names-format">{{name}} {{family}}</set>
+			<set name="height" modifier="2d10">4'8"</set>
+			<set name="weight" modifier="2d4">110 lb.</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="1" />
+			<stat name="charisma" value="1" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Gryffindor)" supports="Ability Score Improvement, Gryffindor" number="1" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Racial Trait" id="ID_WAW_RACIAL_TRAIT_BRAVEHEARTED" />
+			<grant type="Racial Trait" id="ID_WAW_RACIAL_TRAIT_TRUE_GRYFFINDOR" />
+			<select type="Feat" name="Feat (Gryffindor)" />
+		</rules>
+	</element>
+	<element name="Bravehearted" type="Racial Trait" source="Witchcraft and Wizardry" id="ID_WAW_RACIAL_TRAIT_BRAVEHEARTED">
+		<description>
+			<p>You have advantage on saving throws against being frightened from any source other than a Dementor.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being frightened from any source other than a Dementor.</description>
+		</sheet>
+	</element>
+	<element name="True Gryffindor" type="Racial Trait" source="Witchcraft and Wizardry" id="ID_WAW_RACIAL_TRAIT_TRUE_GRYFFINDOR">
+		<description>
+			<p>In times of dire need, the Sword of Gryffindor may present itself to you.</p>
+		</description>
+		<sheet display="false">
+			<description>In times of dire need, the Sword of Gryffindor may present itself to you.</description>
+		</sheet>
+	</element>
+
+	<element name="Hogwarts Student (Hufflepuff)" type="Race" source="Witchcraft and Wizardry" id="ID_WAW_RACE_HUFFLEPUFF">
+		<description>
+			<p class="flavor">Hufflepuffs value hard work, patience, loyalty, and fair play, represented by the sturdy badger. Although often disparaged by others for their lack of competitiveness, the house has produced great wizards – not least Newt Scamander, notable magizoologist and author. Hufflepuff's house colors are yellow and black.</p>
+			<h4>COMPASSION AND EMPATHY</h4>
+			<p>Hufflepuffs value people and community. They base their decisions on who is in need and who they can help. They value fairness because everyone is a person. Even directly wronged, Hufflepuffs will often give a second (or fifth) chance.</p>
+			<p class="indent">But Hufflepuffs aren't inherently tolerant, like Gryffindors aren't inherently moral. They believe that all people deserve some type of kindness or decency, but they can redefine "person" to exclude anyone who doesn't meet their standards.</p>
+			<h4>HARD WORKERS</h4>
+			<p>Hufflepuffs toil. Their strength comes from consistency and the integrity of their method. They have a certain steadiness, naturally becoming the lynchpin of a community. While stereotyped as being social, a Hufflepuff might also be an introverted misanthrope who runs on hard work alone.</p>
+			<h4>HUFFLEPUFF TRAITS</h4>
+			<p>You can rely on them to have certain attributes in common.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score, Wisdom score, and one other ability score of choice increase by 1.</p>
+			<p class="indent"><strong><em>Steadfast Loyalty.</em></strong> You have advantage on saving throws against any effect that would make you attack or work against a creature you would normally consider an ally.</p>
+			<p class="indent"><strong><em>Kitchen Trips.</em></strong> Your experience with the Hogwarts house elves has taught you how to politely address and interact with magical beings.</p>
+			<p class="indent"><strong><em>Feat.</em></strong> You gain one feat of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Adran, Aelar, Aramil, Arannis, Aust, Beiro, Berrian, Carric, Enialis, Erdan, Erevan, Galinndan, Hadarai, Heian, Himo, Immeral, Ivellios, Laucian, Mindartis, Paelias, Peren, Quarion, Riardon, Rolen, Soveliss, Thamior, Tharivol, Theren, Varis</set>
+			<set name="names" type="female">Adrie, Althaea, Anastrianna, Andraste, Antinua, Bethrynna, Birel, Caelynn, Drusilia, Enna, Felosial, Ielenia, Jelenneth, Keyleth, Leshanna, Lia, Meriele, Mialee, Naivara, Quelenna, Quillathe, Sariel, Shanairra, Shava, Silaqui, Theirastra, Thia, Vadania, Valanthe, Xanaphia</set>
+			<set name="names" type="child">Ara, Bryn, Del, Eryn, Faen, Innil. Lael, Mella, Naill, Naeris, Phann, Rael, Rinn, Sai, Syllin, Thia, Vall</set>
+			<set name="names" type="family">Amakiir, Amastacia, Galanodel, Holimion, Ilphelkiir, Liadon, Meliamne, Nai'lo, Siannodel, Xiloscient</set>
+			<set name="names-format">{{name}} {{family}}</set>
+			<set name="height" modifier="2d10">4'8"</set>
+			<set name="weight" modifier="2d4">110 lb.</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="1" />
+			<stat name="wisdom" value="1" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Hufflepuff)" supports="Ability Score Improvement, Hufflepuff" number="1" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Racial Trait" id="ID_WAW_RACIAL_TRAIT_STEADFAST_LOYALTY" />
+			<grant type="Racial Trait" id="ID_WAW_RACIAL_TRAIT_KITCHEN_TRIPS" />
+			<select type="Feat" name="Feat (Hufflepuff)" />
+		</rules>
+	</element>
+	<element name="Steadfast Loyalty" type="Racial Trait" source="Witchcraft and Wizardry" id="ID_WAW_RACIAL_TRAIT_STEADFAST_LOYALTY">
+		<description>
+			<p>You have advantage on saving throws against any effect that would make you attack or work against a creature you would normally consider an ally.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against any effect that would make you attack or work against a creature you would normally consider an ally.</description>
+		</sheet>
+	</element>
+	<element name="Kitchen Trips" type="Racial Trait" source="Witchcraft and Wizardry" id="ID_WAW_RACIAL_TRAIT_KITCHEN_TRIPS">
+		<description>
+			<p>Your experience with the Hogwarts house elves has taught you how to politely address and interact with magical beings.</p>
+		</description>
+		<sheet display="false">
+			<description>Your experience with the Hogwarts house elves has taught you how to politely address and interact with magical beings.</description>
+		</sheet>
+	</element>
+
+	<element name="Hogwarts Student (Ravenclaw)" type="Race" source="Witchcraft and Wizardry" id="ID_WAW_RACE_RAVENCLAW">
+		<description>
+			<p class="flavor">Ravenclaws prize wit, learning, and wisdom. It's an ethos etched into founder Rowena Ravenclaw's diadem: 'wit beyond measure is man's greatest treasure.' Despite the house's reputation for eccentricity and reclusiveness, Ravenclaws tend to make their  mark on the world. Ravenclaw's house colors are blue and bronze.</p>
+			<h4>A SYSTEMATIC MIND</h4>
+			<p>Ravenclaws construct systems to test their decisions against before they feel comfortable calling something right. Their systems give them a way to frame the world and a confidence in their ability to interact with it.</p>
+			<p class="indent">Ravenclaws do not lack intuition, but often distrust gut instinct. Although they go about it differently, a Ravenclaw can be just as morally motivated as a Gryffindor.</p>
+			<h4>CONTINGENCY PLANNERS</h4>
+			<p>Ravenclaws plan. They collect information, they strategize. They have tools. They run hypotheticals and try to plan ahead for things that might come up. They build things (of varying degrees of actual usefulness) that they can use later, whether that’s an emergency supply pack or vast knowledge in a niche topic. They feel less at home in improvisation and more comfortable taking the time to be prepared.</p>
+			<h4>RAVENCLAW TRAITS</h4>
+			<p>With a library in their common room, Ravenclaws will always share studious habits.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score, Wisdom score, and one other ability score of choice increase by 1.</p>
+			<p class="indent"><strong><em>In-Depth Knowledge.</em></strong> Whenever you make an Intelligence or Wisdom ability check that lets you add your proficiency bonus, you can treat a d20 roll of 5 or lower as a 6.</p>
+			<p class="indent"><strong><em>Rowena's Library.</em></strong> You can easily research a desired topic through enlisting your housemates' help and browsing books exclusively found in the Ravenclaw common room.</p>
+			<p class="indent"><strong><em>Feat.</em></strong> You gain one feat of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Adran, Aelar, Aramil, Arannis, Aust, Beiro, Berrian, Carric, Enialis, Erdan, Erevan, Galinndan, Hadarai, Heian, Himo, Immeral, Ivellios, Laucian, Mindartis, Paelias, Peren, Quarion, Riardon, Rolen, Soveliss, Thamior, Tharivol, Theren, Varis</set>
+			<set name="names" type="female">Adrie, Althaea, Anastrianna, Andraste, Antinua, Bethrynna, Birel, Caelynn, Drusilia, Enna, Felosial, Ielenia, Jelenneth, Keyleth, Leshanna, Lia, Meriele, Mialee, Naivara, Quelenna, Quillathe, Sariel, Shanairra, Shava, Silaqui, Theirastra, Thia, Vadania, Valanthe, Xanaphia</set>
+			<set name="names" type="child">Ara, Bryn, Del, Eryn, Faen, Innil. Lael, Mella, Naill, Naeris, Phann, Rael, Rinn, Sai, Syllin, Thia, Vall</set>
+			<set name="names" type="family">Amakiir, Amastacia, Galanodel, Holimion, Ilphelkiir, Liadon, Meliamne, Nai'lo, Siannodel, Xiloscient</set>
+			<set name="names-format">{{name}} {{family}}</set>
+			<set name="height" modifier="2d10">4'8"</set>
+			<set name="weight" modifier="2d4">110 lb.</set>
+		</setters>
+		<rules>
+			<stat name="intelligence" value="1" />
+			<stat name="wisdom" value="1" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Ravenclaw)" supports="Ability Score Improvement, Ravenclaw" number="1" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Racial Trait" id="ID_WAW_RACIAL_TRAIT_IN_DEPTH_KNOWLEDGE" />
+			<grant type="Racial Trait" id="ID_WAW_RACIAL_TRAIT_ROWENAS_LIBRARY" />
+			<select type="Feat" name="Feat (Ravenclaw)" />
+		</rules>
+	</element>
+	<element name="In-Depth Knowledge" type="Racial Trait" source="Witchcraft and Wizardry" id="ID_WAW_RACIAL_TRAIT_IN_DEPTH_KNOWLEDGE">
+		<description>
+			<p>Whenever you make an Intelligence or Wisdom ability check that lets you add your proficiency bonus, you can treat a d20 roll of 5 or lower as a 6.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make an Intelligence or Wisdom ability check that lets you add your proficiency bonus, you can treat a d20 roll of 5 or lower as a 6.</description>
+		</sheet>
+	</element>
+	<element name="Rowena's Library" type="Racial Trait" source="Witchcraft and Wizardry" id="ID_WAW_RACIAL_TRAIT_ROWENAS_LIBRARY">
+		<description>
+			<p>You can easily research a desired topic through enlisting your housemates' help and browsing books exclusively found in the Ravenclaw common room.</p>
+		</description>
+		<sheet display="false">
+			<description>You can easily research a desired topic through enlisting your housemates' help and browsing books exclusively found in the Ravenclaw common room.</description>
+		</sheet>
+	</element>
+
+	<element name="Hogwarts Student (Slytherin)" type="Race" source="Witchcraft and Wizardry" id="ID_WAW_RACE_SLYTHERIN">
+		<description>
+			<p class="flavor">Slytherin produces more than its share of Dark wizards, but also turns out leaders who are proud, ambitious, resourceful, and cunning. Merlin is one particularly famous Slytherin. What others may call cheating or manipulation, a Slytherin calls "playing the game." Slytherin's house colors are green and silver.</p>
+			<h4>INNER CIRCLE</h4>
+			<p>Slytherins are fiercely loyal to the people they care for most. Slytherin is the place where "you’ll make your real friends"; they prioritize individual loyalties and find their moral core in protecting and caring for the people they are closest to.</p>
+			<p class="indent">Slytherin’s reputation for ambition comes from prioritizing themselves and the select people they deem important. Ambition is something you can find in all four houses, but Slytherin’s looks most obviously selfish.</p>
+			<h4>MACHIAVELLIAN MANEUVERS</h4>
+			<p>Slytherins improvise. They are the most adaptive, finding their strength in responding quickly to whatever a situation throws at them. They                      improvise differently than Gryffindors, trying new angles instead of strong-arming the situation. They might have different "faces" for different situations, only truly being themselves when they’re finally alone or feeling safe.</p>
+			<h4>SLYTHERIN TRAITS</h4>
+			<p>Although Slytherins like to keep their secrets, there are some obvious traits they all have.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score, Charisma score, and one other ability score of choice increase by 1.</p>
+			<p class="indent"><strong><em>Compromising Information.</em></strong> Whenever you make a Charisma check related to using a person's secrets, you are considered proficient in the appropriate skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</p>
+			<p class="indent"><strong><em>A Noble Quality.</em></strong> You're able to adopt a persona of importance to blend in among high-ranking officials and prestigious witches and wizards.</p>
+			<p class="indent"><strong><em>Feat.</em></strong> You gain one feat of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Adran, Aelar, Aramil, Arannis, Aust, Beiro, Berrian, Carric, Enialis, Erdan, Erevan, Galinndan, Hadarai, Heian, Himo, Immeral, Ivellios, Laucian, Mindartis, Paelias, Peren, Quarion, Riardon, Rolen, Soveliss, Thamior, Tharivol, Theren, Varis</set>
+			<set name="names" type="female">Adrie, Althaea, Anastrianna, Andraste, Antinua, Bethrynna, Birel, Caelynn, Drusilia, Enna, Felosial, Ielenia, Jelenneth, Keyleth, Leshanna, Lia, Meriele, Mialee, Naivara, Quelenna, Quillathe, Sariel, Shanairra, Shava, Silaqui, Theirastra, Thia, Vadania, Valanthe, Xanaphia</set>
+			<set name="names" type="child">Ara, Bryn, Del, Eryn, Faen, Innil. Lael, Mella, Naill, Naeris, Phann, Rael, Rinn, Sai, Syllin, Thia, Vall</set>
+			<set name="names" type="family">Amakiir, Amastacia, Galanodel, Holimion, Ilphelkiir, Liadon, Meliamne, Nai'lo, Siannodel, Xiloscient</set>
+			<set name="names-format">{{name}} {{family}}</set>
+			<set name="height" modifier="2d10">4'8"</set>
+			<set name="weight" modifier="2d4">110 lb.</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="1" />
+			<stat name="wisdom" value="1" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Slytherin)" supports="Ability Score Improvement, Slytherin" number="1" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Racial Trait" id="ID_WAW_RACIAL_TRAIT_COMPROMISING_INFORMATION" />
+			<grant type="Racial Trait" id="ID_WAW_RACIAL_TRAIT_A_NOBLE_QUALITY" />
+			<select type="Feat" name="Feat (Slytherin)" />
+		</rules>
+	</element>
+	<element name="Compromising Information" type="Racial Trait" source="Witchcraft and Wizardry" id="ID_WAW_RACIAL_TRAIT_COMPROMISING_INFORMATION">
+		<description>
+			<p>Whenever you make a Charisma check related to using a person's secrets, you are considered proficient in the appropriate skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make a Charisma check related to using a person's secrets, you are considered proficient in the appropriate skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</description>
+		</sheet>
+	</element>
+	<element name="A Noble Quality" type="Racial Trait" source="Witchcraft and Wizardry" id="ID_WAW_RACIAL_TRAIT_A_NOBLE_QUALITY">
+		<description>
+			<p>You're able to adopt a persona of importance to blend in among high-ranking officials and prestigious witches and wizards.</p>
+		</description>
+		<sheet display="false">
+			<description>You're able to adopt a persona of importance to blend in among high-ranking officials and prestigious witches and wizards.</description>
+		</sheet>
+	</element>
+</elements>

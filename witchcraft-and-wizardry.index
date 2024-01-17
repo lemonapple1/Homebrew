@@ -7,8 +7,10 @@
 		</update>
 	</info>
 	<files>
-		<file name="source.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/source.xml" />		
-		<file name="spells.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/spells.xml" />		
-		<file name="tools.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/items/tools.xml" />		
+		<file name="classes.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/classes.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/source.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/spells.xml" />
+		<file name="tools.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/items/tools.xml" />
+		<file name="hogwarts.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/races/hogwarts.xml" />
 	</files>
 </index>
