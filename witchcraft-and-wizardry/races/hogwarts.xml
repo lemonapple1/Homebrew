@@ -42,6 +42,7 @@
 			<grant type="Racial Trait" id="ID_WAW_RACIAL_TRAIT_BRAVEHEARTED" />
 			<grant type="Racial Trait" id="ID_WAW_RACIAL_TRAIT_TRUE_GRYFFINDOR" />
 			<select type="Feat" name="Feat (Gryffindor)" id="ID_WAW_HOUSE_FEAT" />
+			<select type="Racial Trait" name="Blood Status" supports="Blood Status" />
 		</rules>
 	</element>
 	<element name="Bravehearted" type="Racial Trait" source="Witchcraft and Wizardry" id="ID_WAW_RACIAL_TRAIT_BRAVEHEARTED">
@@ -96,6 +97,7 @@
 			<grant type="Racial Trait" id="ID_WAW_RACIAL_TRAIT_STEADFAST_LOYALTY" />
 			<grant type="Racial Trait" id="ID_WAW_RACIAL_TRAIT_KITCHEN_TRIPS" />
 			<select type="Feat" name="Feat (Hufflepuff)" id="ID_WAW_HOUSE_FEAT" />
+			<select type="Racial Trait" name="Blood Status" supports="Blood Status" />
 		</rules>
 	</element>
 	<element name="Steadfast Loyalty" type="Racial Trait" source="Witchcraft and Wizardry" id="ID_WAW_RACIAL_TRAIT_STEADFAST_LOYALTY">
@@ -150,6 +152,7 @@
 			<grant type="Racial Trait" id="ID_WAW_RACIAL_TRAIT_IN_DEPTH_KNOWLEDGE" />
 			<grant type="Racial Trait" id="ID_WAW_RACIAL_TRAIT_ROWENAS_LIBRARY" />
 			<select type="Feat" name="Feat (Ravenclaw)" id="ID_WAW_HOUSE_FEAT" />
+			<select type="Racial Trait" name="Blood Status" supports="Blood Status" />
 		</rules>
 	</element>
 	<element name="In-Depth Knowledge" type="Racial Trait" source="Witchcraft and Wizardry" id="ID_WAW_RACIAL_TRAIT_IN_DEPTH_KNOWLEDGE">
@@ -204,6 +207,7 @@
 			<grant type="Racial Trait" id="ID_WAW_RACIAL_TRAIT_COMPROMISING_INFORMATION" />
 			<grant type="Racial Trait" id="ID_WAW_RACIAL_TRAIT_A_NOBLE_QUALITY" />
 			<select type="Feat" name="Feat (Slytherin)" id="ID_WAW_HOUSE_FEAT" />
+			<select type="Racial Trait" name="Blood Status" supports="Blood Status" />
 		</rules>
 	</element>
 	<element name="Compromising Information" type="Racial Trait" source="Witchcraft and Wizardry" id="ID_WAW_RACIAL_TRAIT_COMPROMISING_INFORMATION">
@@ -222,4 +226,34 @@
 			<description>You're able to adopt a persona of importance to blend in among high-ranking officials and prestigious witches and wizards.</description>
 		</sheet>
 	</element>
+
+	<!-- Blood Types -->
+	<element name="Blood Status (Pure-blood)" type="Racial Trait" source="Witchcraft and Wizardry" id="ID_WAW_RACIAL_TRAIT_BLOOD_STATUS_PURE_BLOOD">
+		<supports>Blood Status</supports>
+		<description>
+			<p>Purebloods come from a long line of wizards and witches, without a drop of Muggle blood in their veins. Raised in wizarding culture, purebloods have grown up riding broomsticks, playing Quidditch in the yard, and hearing the nursery rhymes of Beedle the Bard. Well acquainted with this world, they enter Hogwarts with a little extra confidence.</p>
+		</description>
+		<sheet alt="Pure-Blood">
+			<description>Purebloods come from a long line of wizards and witches, without a drop of Muggle blood in their veins. Raised in wizarding culture, purebloods have grown up riding broomsticks, playing Quidditch in the yard, and hearing the nursery rhymes of Beedle the Bard. Well acquainted with this world, they enter Hogwarts with a little extra confidence.</description>
+		</sheet>
+	</element>
+	<element name="Blood Status (Half-blood)" type="Racial Trait" source="Witchcraft and Wizardry" id="ID_WAW_RACIAL_TRAIT_BLOOD_STATUS_HALF_BLOOD">
+		<supports>Blood Status</supports>
+		<description>
+			<p>The vast majority of human wizards are considered half-bloods, wizards that have some combination of magical and Muggle ancestry. Originally used to describe a child of a magical wizard and a non-magical Muggle, half-blood has become an encompassing term. While many half-bloods are raised in the wizarding world, it’s not uncommon for a half-blood to be unaware of their magical side of their family, having a very similar experience to Muggle-borns.</p>
+		</description>
+		<sheet alt="Half-Blood">
+			<description>The vast majority of human wizards are considered half-bloods, wizards that have some combination of magical and Muggle ancestry. Originally used to describe a child of a magical wizard and a non-magical Muggle, half-blood has become an encompassing term. While many half-bloods are raised in the wizarding world, it’s not uncommon for a half-blood to be unaware of their magical side of their family, having a very similar experience to Muggle-borns.</description>
+		</sheet>
+	</element>
+	<element name="Blood Status (Muggle-born)" type="Racial Trait" source="Witchcraft and Wizardry" id="ID_WAW_RACIAL_TRAIT_BLOOD_STATUS_MUGGLE_BORN">
+		<supports>Blood Status</supports>
+		<description>
+			<p>Muggle-borns are wizards and witches born to Muggle parents, non-magical folk. Muggle-borns enter an entirely new world when they receive their letter from Hogwarts. Although they’ll have to adapt to wizarding culture, the lessons they’ve learned from the Muggle world will serve them well and help them see things from a different perspective. Additionally, living in a world without magic means they know how to do things the hard way.</p>
+		</description>
+		<sheet alt="Muggle-Born">
+			<description>Muggle-borns are wizards and witches born to Muggle parents, non-magical folk. Muggle-borns enter an entirely new world when they receive their letter from Hogwarts. Although they’ll have to adapt to wizarding culture, the lessons they’ve learned from the Muggle world will serve them well and help them see things from a different perspective. Additionally, living in a world without magic means they know how to do things the hard way.</description>
+		</sheet>
+	</element>
+	<!-- Blood Types -->
 </elements>

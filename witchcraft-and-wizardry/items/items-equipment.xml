@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Witchcraft and Wizardry: Equipment</name>
+		<update version="0.0.1">
+			<file name="items-equipment.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/items/items-equipment.xml" />
+		</update>
+	</info>
+	<element name="Hand-Me-Down Student's Trunk" type="Item" source="Witchcraft and Wizardry" id="ID_WAW_ITEM_HAND_ME_DOWN_STUDENTS_TRUNK">
+		<description>
+			<p>Includes a trunk, 3 sets of darned and worn work robes (black) with name tags sewn in, a crumpled pointed hat (black), a 10-foot roll of parchment, a quill, and a bottle of black ink. When receiving this pack for the first time, it also includes a pouch containing 5 sickles.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost" currency="gp">8</set>
+			<set name="weight" lb="10">10 lbs.</set>
+		</setters>
+		<extract>
+			<item>ID_WAW_ITEM_TRUNK</item>
+			<item amount="3">ID_WAW_ITEM_WORK_ROBES_WORN</item>
+			<item>ID_WAW_ITEM_SCHOOL_HAT_WORN</item>
+			<item amount="10">ID_WOTC_PHB_ITEM_PARCHMENT_ONESHEET</item>
+			<item>ID_WOTC_PHB_ITEM_INKPEN</item>
+			<item>ID_WOTC_PHB_ITEM_INK_1OUNCEBOTTLE</item>
+		</extract>
+	</element>
+	<element name="Standard Student's Trunk" type="Item" source="Witchcraft and Wizardry" id="ID_WAW_ITEM_STANDARD_STUDENTS_TRUNK">
+		<description>
+			<p>Includes a trunk, 3 sets of plain work robes (black) with name tags sewn in, a plain pointed hat (black), 2 10-foot rolls of parchment, 3 quills, and 2 bottles of black ink. When receiving this pack for the first time, it also includes a pouch containing 15 sickles.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost" currency="gp">16</set>
+			<set name="weight" lb="10">10 lbs.</set>
+		</setters>
+		<extract>
+			<item>ID_WAW_ITEM_TRUNK</item>
+			<item amount="3">ID_WAW_ITEM_WORK_ROBES_PLAIN</item>
+			<item>ID_WAW_ITEM_SCHOOL_HAT_PLAIN</item>
+			<item amount="20">ID_WOTC_PHB_ITEM_PARCHMENT_ONESHEET</item>
+			<item amount="3">ID_WOTC_PHB_ITEM_INKPEN</item>
+			<item amount="2">ID_WOTC_PHB_ITEM_INK_1OUNCEBOTTLE</item>
+		</extract>
+	</element>
+	<element name="Wealthy Student's Trunk" type="Item" source="Witchcraft and Wizardry" id="ID_WAW_ITEM_WEALTHY_STUDENTS_TRUNK">
+		<description>
+			<p>Includes a trunk, 3 sets of luxurious work robes (black) with name tags sewn in, a fancy pointed hat (black), 3 10-foot rolls of parchment, 5 quills, 2 bottles of black ink, a bottle of emerald green ink, and a bottle of scarlet ink. When receiving this pack for the first time, it also includes a pouch containing 2 galleons.</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost" currency="gp">16</set>
+			<set name="weight" lb="10">10 lbs.</set>
+		</setters>
+		<extract>
+			<item>ID_WAW_ITEM_TRUNK</item>
+			<item amount="3">ID_WAW_ITEM_WORK_ROBES_LUXURY</item>
+			<item>ID_WAW_ITEM_SCHOOL_HAT_FANCY</item>
+			<item amount="30">ID_WOTC_PHB_ITEM_PARCHMENT_ONESHEET</item>
+			<item amount="5">ID_WOTC_PHB_ITEM_INKPEN</item>
+			<item amount="4">ID_WOTC_PHB_ITEM_INK_1OUNCEBOTTLE</item>
+		</extract>
+	</element>
+
+	<element name="Trunk" type="Item" source="Witchcraft and Wizardry" id="ID_WAW_ITEM_TRUNK">
+		<description>
+			<p>A trunk can hold 1 cubic foot/ 30 pounds of gear.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="5">5 lb.</set>
+		</setters>
+	</element>
+	<element name="Work Robes, Worn" type="Item" source="Witchcraft and Wizardry" id="ID_WAW_ITEM_WORK_ROBES_WORN">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="3">3 lb.</set>
+		</setters>
+	</element>
+	<element name="Work Robes, Plain" type="Item" source="Witchcraft and Wizardry" id="ID_WAW_ITEM_WORK_ROBES_PLAIN">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">6</set>
+			<set name="weight" lb="3">3 lb.</set>
+		</setters>
+	</element>
+	<element name="Work Robes, Luxurious" type="Item" source="Witchcraft and Wizardry" id="ID_WAW_ITEM_WORK_ROBES_LUXURY">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">8</set>
+			<set name="weight" lb="3">3 lb.</set>
+		</setters>
+	</element>
+	<element name="School Hat, Worn" type="Item" source="Witchcraft and Wizardry" id="ID_WAW_ITEM_SCHOOL_HAT_WORN">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">3</set>
+			<set name="weight" lb="3">3 lb.</set>
+		</setters>
+	</element>
+	<element name="School Hat, Plain" type="Item" source="Witchcraft and Wizardry" id="ID_WAW_ITEM_SCHOOL_HAT_PLAIN">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">4</set>
+			<set name="weight" lb="3">3 lb.</set>
+		</setters>
+	</element>
+	<element name="School Hat, Fancy" type="Item" source="Witchcraft and Wizardry" id="ID_WAW_ITEM_SCHOOL_HAT_FANCY">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">6</set>
+			<set name="weight" lb="3">3 lb.</set>
+		</setters>
+	</element>
+</elements>
