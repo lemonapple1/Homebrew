@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Witchcraft and Wizardry: Tools</name>
+		<update version="0.0.1">
+			<file name="items-potions.xml" url="https://raw.githubusercontent.com/lemonapple1/Homebrew/main/witchcraft-and-wizardry/items/items-potions.xml" />
+		</update>
+	</info>
+	<!-- First Year Potions -->
+	<element name="Antidote to Common Poisons" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_ANTIDOTE_TO_COMMON_POISONS">
+		<description>
+			<p>When you drink this potion, simple poisons in your system are neutralized and you gain advantage on saving throws against poison for 1 hour. If you took poison damage in the previous minute, you regain half of your hit points lost to poison damage, up to a maximum of 15 hit points.</p>
+			<p class="indent"><strong>Antidote to:</strong> Baneberry Poison, Doxycide, Garrotting Gas, Moonseed Poison</p>
+		</description>
+		<setters>
+			<set name="keywords">disease, poison</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Cure for Boils" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_CURE_FOR_BOILS">
+		<description>
+			<p>This specially formulated potion will magically remove any acne, boils or blemishes from your face when applied.</p>
+			<p class="indent"><strong>Antidote to:</strong> Fungiface Potion, furnunculus</p>
+		</description>
+		<setters>
+			<set name="keywords">beauty</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Forgetfulness Potion" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_FORGETFULNESS_POTION">
+		<description>
+			<p>When you drink this potion, you forget everything you perceived in the last minute and you won't be able to remember anything you perceive in the next 10 minutes.</p>
+		</description>
+		<setters>
+			<set name="keywords">forget, memory</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Herbicide Potion" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_HERBICIDE_POTION">
+		<description>
+			<p>When this poison is poured directly on a magical plant, the plant immediately withers and dies. There is only enough poison to affect a plant that fits within a 5 foot cube. If the magical plant is larger than a 5 foot cube, the affected area will wither, but the plant will not die until the entire plant is withered.</p>
+		</description>
+		<setters>
+			<set name="keywords">plants, poison</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Wiggenweld Potion" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_WIGGENWELD_POTION">
+		<description>
+			<p>This healing potion is the antidote for magically induced sleep, immediately waking the victim. (Unless the potion is flawed, the recipient of the potion may roll to heal 1d4)</p>
+			<p class="indent"><strong>Antidote to:</strong> Draught of Living Death, Sleeping Draught, stupefy</p>
+		</description>
+		<setters>
+			<set name="keywords">healing, poison</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<!-- First Year Potions -->
+</elements>

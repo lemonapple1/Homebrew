@@ -7,6 +7,7 @@
 		</update>
 	</info>
 
+	<!-- First Year Spells -->
 	<!-- First Year Charms -->
 	<element name="Levitation Charm (Wingardium Leviosa)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_LEVITATION_CHARM">
 		<supports>Caster</supports>
@@ -190,7 +191,7 @@
 		<setters>
 			<set name="keywords"></set>
 			<set name="level">1</set>
-			<set name="school">Jinx</set>
+			<set name="school">Jinxes, Hexes and Curses</set>
 			<set name="time">1 action</set>
 			<set name="duration">Instantaneous</set>
 			<set name="range">60 feet</set>
@@ -206,7 +207,7 @@
 		<supports>Caster</supports>
 		<description>
 			<p>You conjure a fire which shoots from you wand to a target you can see within range. Until the spells ends, the fire created fills a 5-foot cube. Any creature in the enchanted fire’s space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it enters the bonfire’s space for the first time on a turn or ends its turn there.</p>
-			<p class="indent">The bonfire ignites flammable objects in its area that aren’t being worn or carried.</p>
+			<p class="indent">The flame ignites flammable objects in its area that aren’t being worn or carried.</p>
 			<p class="indent"><strong>At Higher Levels.</strong> When cast this spell from a spells slot of 2nd level or higher, the spell's damage increases by 2d6 for each slot level above 2nd.</p>
 		</description>
 		<setters>
@@ -226,6 +227,298 @@
 	</element>
 	<!-- First Year Charms -->
 
+
+	<!-- First Year Generic -->
+	<element name="Gouging Spell (Defodio)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_DEFODIO">
+		<supports>Caster</supports>
+		<description>
+			<p>You choose a portion of dirt or stone that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:</p>
+			<ul>
+				<li>If you target an area of stone or earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn’t have enough force to cause damage.</li>
+				<li>If the dirt or stone you target is on the ground, you cause it to become difficult terrain. Alternatively, you can cause the ground to become normal terrain if it is already difficult terrain. This change lasts for 1 hour. If cast multiple times, only two of this effect can be active at a time, and you can dismiss such an effect as a bonus action.</li>
+			</ul>
+			<p class="indent"><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 1st level or higher, the cube's size and distance the earth can be moved are each increased by 5 feet and the number of active normal/difficult terrain effects increase by 1 for each slot level above 0.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Charm</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet (5 foot cube)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Finestra Spell" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_FINESTRA">
+		<supports>Caster</supports>
+		<description>
+			<p>A pane of glass you can see within range shatters into small glass fragments, making it an open entryway</p>
+			<p> When you cast this spell you may roll a d4 to get the following effects:</p>
+			<table>
+				<thead>
+					<tr><td class="col-5">d4</td><td class="left">Effect</td></tr>
+				</thead>
+				<tr><td>1</td><td>The glass shatters loudly and leaves some shards behind.</td></tr>
+				<tr><td>2-3</td><td>The spell acts as usual.</td></tr>
+				<tr><td>4</td><td>The glass turns into small fine shards which drop almost silently to the floor.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Charm</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Periculum / Verdimillious" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_PERICULUM_VERDIMILLIOUS">
+		<supports>Caster</supports>
+		<description>
+			<p>This spell sends red (Periculum) or green (Verdimillious) sparks shooting from the casters wand for signaling purposes.</p>
+			<p>The target must make a Dexterity saving throw. On a failed save, the target takes 1d10 radiant damage and is restrained for the spell’s duration.</p>
+			<p>It may also appear as a flare, traveling a desired distance upward before exploding in light and hovering in the air.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Charm</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Up to 40 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Shield Charm (Protego)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_PROTEGO">
+		<supports>Caster</supports>
+		<description>
+			<p>An invisible barrier of magical force appears in front of you and protects you. For the duration, you have a +5 bonus to AC, including against the triggering attack. If you are targeted by a spell that requires an attack roll and the spell's level is equal to or lower than half your proficiency bonus, the spell has no effect on you.</p>
+			<p class="indent">You can use a bonus action to change which direction the shield is facing. If you are attacked from either of your sides or from behind while casting this spell, you must use your reaction to redirect the shield to point towards the threat. Otherwise, this spell doesn't protect you.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Charm</set>
+			<set name="time">1 action or reaction, which you take when you are hit by an attack</set>
+			<set name="duration">Dedication, up to 10 minutes</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Cantis" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_CANTIS">
+		<supports>Caster</supports>
+		<description>
+			<p>When struck by this spell, a being can't help but belt out a couple of lines from the first song that comes to mind. Make a ranged spell attack against a being within range. On a hit, the target must cast all other spells non-verbally until the end of its next turn. If it tries to cast a spell verbally, it must first succeed on an Intelligence saving throw, or the casting fails and the spell is wasted.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Jinxes, Hexes and Curses</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Bombardment Spell (Bombarda)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_BOMBARDA">
+		<supports>Caster</supports>
+		<description>
+			<p>The spell blasts whatever it hits, creating a localized concussive explosion upon impact. Make a ranged spell attack against a target within range. On a hit, the target takes 1d10 force damage.</p>
+			<p class="indent">This spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Jinxes, Hexes and Curses</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Full Body-Bind Curse (Petrificus Totalus)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_PETRIFICUS_TOTALUS">
+		<supports>Caster</supports>
+		<description>
+			<p>This spell makes a being's arms and legs snap together, and it will fall down, stiff as a board. Make a ranged spell attack against a being within range. On a hit, the target is knocked prone and paralyzed for the duration.</p>
+			<p class="indent"><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 3rd level or higher, you can target a beast instead of a being.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Jinxes, Hexes and Curses</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute, or if in combat, Dedication, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Obscuro" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_OBSCURO">
+		<supports>Caster</supports>
+		<description>
+			<p>You can conjure a black blindfold that magically wraps itself around a foe's head. Choose one creature that you can see within range to make a Dexterity saving throw. If it fails, the target is blinded for the duration. The creature can remove the blindfold as an action.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Transfiguration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Until dispelled</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Reviving Spell (Rennervate)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_RENNERVATE">
+		<supports>Caster</supports>
+		<description>
+			<p>Magically induced unconsciousness (With the exception of living death) is ended for a being of your choice you can see within range.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Healing</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Episkey" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_EPISKEY">
+		<supports>Caster</supports>
+		<description>
+			<p>A being of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>
+			<p class="indent"><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Healing</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Reparifors" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_REPARIFORS">
+		<supports>Caster</supports>
+		<description>
+			<p>With a tap of your wand, a being that you can see within range regains 1d2 hit points. You can also end either one disease or one condition afflicting it. The condition can be blinded (if it wasn't induced by a jinx, hex or curse), paralyzed, or poisoned.</p>
+			<p class="indent"><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Healing</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Reverse Spell (Prior Incantato)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_PRIOR_INCANTATO">
+		<supports>Caster</supports>
+		<description>
+			<p>Often used as an investigative tool in wizarding crimes, this spell produces a ghostly recreation of the previous spell cast by the currently held wand. If the previously cast spell cannot be represented visually, you learn the incantation that was used, regardless of whether the incantation was spoken aloud at the time of casting. This spell can be cast a total of three consecutive times on a single wand, revealing the three most recently cast spells.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A wand</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Specialis Revelio" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_SPECIALIS_REVELIO">
+		<supports>Caster</supports>
+		<description>
+			<p>You tap your wand on an object or area, revealing magical influences. If it is a magic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it.</p>
+			<p class="indent">If cast on an area, you learn what spells, if any, are currently active within a 5-foot cube in front of you. The border of each spell's effect is illuminated within that cube, much like blowing dust through laser beams.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<!-- First Year Generic -->
+	<!-- First Year Spells -->
+
+	<!-- Apparition -->
 	<element name="Apparition" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_APPARITION">
 		<supports>Caster</supports>
 		<requirements>ID_WAW_CLASS_FEATURE_CASTER_APPARITION_LESSONS</requirements>
@@ -271,5 +564,6 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+	<!-- Apparition -->
 </elements>
 
