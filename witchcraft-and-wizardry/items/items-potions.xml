@@ -76,4 +76,423 @@
 		</setters>
 	</element>
 	<!-- First Year Potions -->
+
+	<!-- Second Year Potions -->
+	<element name="Girding Potion" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_GIRDING_POTION">
+		<description>
+			<p>When you drink this potion, you gain 3d4 + 4 temporary hit points for 1 hour. This feels like an abnormal amount of physical stamina and pain tolerance.</p>
+		</description>
+		<setters>
+			<set name="keywords">healing, strength</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Strengthening Solution" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_STRENGTHENING_SOLUTION">
+		<description>
+			<p>When you drink this potion, your Strength score is raised by 5 (with a max of 21) for 1 hour.</p>
+		</description>
+		<setters>
+			<set name="keywords">strength</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Swelling Solution" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_SWELLING_SOLUTION">
+		<description>
+			<p>When you drink this potion, you gain the effects of the engorgio spell for 1d4 hours (no concentration required). This potion can also be poured over an object for a similar effect.</p>
+			<p class="indent"><strong>Antidote to:</strong> diminuendo, reducio, Shrinking Solution</p>
+		</description>
+		<setters>
+			<set name="keywords">size, grow</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Fire Protection Potion" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_FIRE_PROTECTION_POTION">
+		<description>
+			<p>When you drink this potion, you gain advantage on rolls related to dodging fire damage for 1 hour.</p>
+		</description>
+		<setters>
+			<set name="keywords">size, grow</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Hair-Raising Potion" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_HAIR_RAISING_POTION">
+		<description>
+			<p>When you drink this potion, your hair stands on end. You have disadvantage on Charisma (Deception), Charisma (Intimidation), Charisma (Persuasion) rolls.</p>
+		</description>
+		<setters>
+			<set name="keywords">size, grow</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<!-- Second Year Potions -->
+	<!-- Third Year Potions -->
+	<element name="Confusing Concoction" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_CONFUSING_CONCOCTION">
+		<description>
+			<p>When you drink this potion, you become utterly discombobulated for 6 seconds. You can’t take actions or reactions and you roll a d10. If you roll 1-8, you must use all of your movement to move in a random direction. To determine the direction, assign a direction to each number 1-8. If you roll a 9-10, you don't move.</p>
+		</description>
+		<setters>
+			<set name="keywords">confusion, control</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Antidote to Uncommon Poisons" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_ANTIDOTE_TO_UNCOMMON_POISONS">
+		<description>
+			<p>When you drink this potion, this more potent antidote counteracts poisons and you gain advantage on saving throws against poison for 1 hour. If you took poison damage in the previous minute, you regain all of your hit points lost to poison damage, up to a maximum of 30 hit points.</p>
+			<p class="indent"><strong>Antidote to:</strong> Baneberry Poison, Bloodroot Poison, Doxycide, Garrotting Gas, Moonseed Poison, Noxious Potion</p>
+		</description>
+		<setters>
+			<set name="keywords">disease, poison</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Shrinking Solution" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_SHRINKING_SOLUTION">
+		<description>
+			<p>When you drink this potion, you gain the effects of the diminuendo spell for 1d4 hours (no concentration required). This potion can also be poured over an object for the effects of reducio.</p>
+			<p class="indent"><strong>Antidote to:</strong> engorgio, Swelling Solution</p>
+		</description>
+		<setters>
+			<set name="keywords">size, grow</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Doxycide" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_DOXYCIDE">
+		<description>
+			<p>Delivered as a mist via a spray bottle, this mild poison is a household staple to deal with pests. A creature that inhales this poison must succeed on a DC 13 Constitution saving throw, taking 2 (1d4) poison damage on a failed save, or half as much damage on a successful one.</p>
+			<p class="indent">If the victim of this poison is a tiny Beast, it is paralyzed for 1 hour on a failed save.</p>
+		</description>
+		<setters>
+			<set name="keywords">disease, poison</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Wideye Potion" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_WIDEYE_POTION">
+		<description>
+			<p>Also known as the Awakening Potion, drinking this potion removes up to two levels of exhaustion. Other uses are awakening someone from non-magical drugging or concussion, and side effects include restlessness and insomnia.</p>
+			<p class="indent"><strong>Antidote to:</strong> Draught of Living Death, Sleeping Draught, stupefy</p>
+		</description>
+		<setters>
+			<set name="keywords">healing, poison</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<!-- Third Year Potions -->
+	<!-- Fourth Year Potions -->
+	<element name="Wit-Sharpening Potion" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_WIT_SHARPENING_POTION">
+		<description>
+			<p>When you drink this potion, your brain's neurological functioning is maximized, raising your Intelligence and Wisdom scores to 20 for 1 hour. The potion has no effect if your ability scores are equal to or greater than that score.</p>
+			<p class="indent"><strong>Antidote to:</strong> Befuddlement Draught, Common and Uncommon Love Potions, confundo, Confusing Concoction, jelly-brain jinx</p>
+		</description>
+		<setters>
+			<set name="keywords">healing, poison</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Calming Draught" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_CALMING_DRAUGHT">
+		<description>
+			<p>When you drink this potion, all strong emotions are suppressed for half an hour, putting you into a neutral and relaxed disposition. Any charmed or frightened condition is removed and you have advantage on saving throws against being charmed or frightened. Unfortunately, the feeling of this potion wearing off has been described as experiencing all of the suppressed emotions at once, and some suppressed conditions may resume. Additionally, if you are hostile, you will become indifferent to the targets of your hostility. This indifference ends if you are attacked or harmed by a spell or if you witnesses any of your friends being harmed.</p>
+			<p class="indent"><strong>Antidote to:</strong> Elixir to Induce Euphoria, cheering charm, Gregory's Unctuous Unction</p>
+		</description>
+		<setters>
+			<set name="keywords">healing</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Pepperup Potion" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_PEPPERUP_POTION">
+		<description>
+			<p>When you drink this deep red potion, jets of steam shoot out of your ears, you're cured of the common cold and you feel quite warm throughout your body, rendering you immune to gaining exhaustion from cold environments for 1 hour. One level of exhaustion is removed for the duration, but it is regained at the end of the potion's effects.</p>
+		</description>
+		<setters>
+			<set name="keywords">healing</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Ageing Potion" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_WIT_AGEING_POTION">
+		<description>
+			<p>When you drink this potion, your age is increased by 4d10 years for 1 hour. This effect authentically changes your age, but doesn't reduce your lifespan or introduce maladies due to aging. One quarter, one half, or three quarters of this potion may be drunk, modifying the effect to 1d10, 2d10, or 3d10.</p>
+		</description>
+		<setters>
+			<set name="keywords">age</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Weedosoros" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_WIT_WEEDOSOROS">
+		<description>
+			<p>Named after the mysterious magical plant, weed of sorrows, this poison is reputed to fill the victim with deep regret in their final moments. A creature that ingests this poison must make a DC 15 Constitution saving throw, taking 14d6 poison damage and being poisoned for 1 day on a failed save, or half as much damage (rounded down) and poisoned for 1 minute on a successful one.</p>
+		</description>
+		<setters>
+			<set name="keywords">poison</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<!-- Fourth Year Potions -->
+	<!-- Fifth Year Potions -->
+	<element name="Draught of Peace" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_DRAUGHT_OF_PEACE">
+		<description>
+			<p>When you drink this potion, all strong emotions are suppressed for 1 hour, putting you into a neutral and relaxed disposition. Any charmed or frightened condition is removed and you have advantage on saving throws against being charmed or frightened. Unfortunately, the feeling of this potion wearing off has been described as experiencing all of the suppressed emotions at once, and some suppressed conditions may resume. Additionally, if you are hostile, you will become indifferent to the targets of your hostility. This indifference ends if you are attacked or harmed by a spell or if you witnesses any of your friends being harmed.</p>
+			<p class="indent"><strong>Antidote to:</strong> Beguiling Bubbles, Cupid Crystals, Elixir to Induce Euphoria, exhilaro, Gregory's Unctuous Unction, Heartbreak Teardrops, Twilight Moonbeams</p>
+		</description>
+		<setters>
+			<set name="keywords">healing</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Invigoration Draught" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_INVIGORATION_DRAUGHT">
+		<description>
+			<p>You regain 6d4 + 8 hit points when you drink this shimmering orange potion.</p>
+		</description>
+		<setters>
+			<set name="keywords">healing</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Polyjuice Potion" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_POLYJUICE_POTION">
+		<description>
+			<p>After adding the hair, nail clipping, or other part of a human, drinking this potion perfectly transforms you into that human for 1 hour, changing your height, weight, facial features, sound of your voice, hair length and coloration. None of your statistics change, but your size may change to match the targeted human.</p>
+			<p calss="indent">The potion works for part-humans, but not half-humans. The consistency of the potion is always like a thick mud, but the color and flavor change based on the targeted human, typically tasting very unpleasant.</p>
+		</description>
+		<setters>
+			<set name="keywords">transfiguration</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Befuddlement Draught" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_BEFUDDLEMENT_DRAUGHT">
+		<description>
+			<p>When you drink this potion, you become belligerent and reckless for 1 hour. For the duration, you have disadvantage on Intelligence checks and Wisdom checks, and you have advantage on saving throws against being frightened from any source other than a Dementor.</p>
+		</description>
+		<setters>
+			<set name="keywords">confusion</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Erumpent Potion" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_ERUMPENT_POTION">
+		<description>
+			<p>As an action, you can throw a bottle of Erumpent Potion at a point up to 60 feet away, releasing a violent explosion and shockwave. Each creature within 10 feet of that point must make a DC 14 Dexterity saving throw, taking 10d6 bludgeoning damage on a failed save, or half as much damage on a successful one. Each creature within 30 feet of that point takes 4d8 thunder damage. This potion is highly volatile and will explode if it is poured out of its container.</p>
+		</description>
+		<setters>
+			<set name="keywords">explosion</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<!-- Fifth Year Potions -->
+	<!-- Sixth Year Potions -->
+	<element name="Felix Felicis" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_FELIX_FELICIS">
+		<description>
+			<p>Also known as "liquid luck", this potion makes you exceptionally lucky for 1d4 hours, to the point of succeeding at everything you attempt. For the duration, your Charisma score is raised to 21, you can’t be surprised or frightened and have advantage on attack rolls, ability checks, and saving throws. Additionally, other creatures have disadvantage on attack rolls against you for the duration.</p>
+			<p>This potion has been stated to greatly resemble molten gold. It is meant to be used sparingly, however, as it causes giddiness, recklessness, and dangerous overconfidence if taken in excess. Felix Felicis is highly toxic in large quantities.</p>
+		</description>
+		<setters>
+			<set name="keywords">luck</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Legendary</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Veritaserum" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_VERITASERUM">
+		<description>
+			<p>A creature subjected to this potion must succeed on a DC 21 Charisma saving throw. On a failed save, the creature is compelled to tell the whole truth to any questions asked of it within the next 10 minutes to the best of its ability. You know whether the creature succeeds or fails on its saving throw, based on the dull and dazed look in its eyes.</p>
+			<p class="indent">On a successful save, the creature is aware of the potion's effect for the next 10 minutes, and can avoid answering questions to which it would normally respond with a lie. Such creatures can be evasive in their answers as long as they remain within the boundaries of the truth.</p>
+		</description>
+		<setters>
+			<set name="keywords">truth</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Legendary</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Amortentia" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_AMORTENTIA">
+		<description>
+			<p>When a being drinks this potion, they are overwhelmingly charmed by the brewer of this potion for 1 week. The charmed subject believes the brewer to be their one true love and will perform any request the brewer asks, to the best of their ability. All thoughts will be colored by a powerful obsession with the brewer, but their personality will otherwise be unchanged. This charmed effect can only be removed by an antidote to this potion.</p>
+		</description>
+		<setters>
+			<set name="keywords">love</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Draught of Living Death" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_DRAUGHT_OF_LIVING_DEATH">
+		<description>
+			<p>The drinker of this infamous and challenging poison falls into a deep sleep and can't be awoken by any means, aside from administering an antidote. The creature will breathe normally, but cannot be suffocated in this state. It also doesn't need to eat or drink. The creature will age normally, and it can die of old age while under the effects of this poison.</p>
+		</description>
+		<setters>
+			<set name="keywords">poison, sleep</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Memory Potion" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_MEMORY_POTION">
+		<description>
+			<p>When you drink this potion, lost memories are restored to you and you're able to recall more details than usual. You have advantage on Intelligence (Herbology), Intelligence (Magical Theory) and Intelligence (Muggle Studies) checks for 10 minutes.</p>
+			<p class="indent"><strong>Antidote to:</strong> Forgetfulness Potion, obliviate</p>
+		</description>
+		<setters>
+			<set name="keywords">memory</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<!-- Sixth Year Potions -->
+	<!-- Seventh Year Potions -->
+	<element name="Wolfsbane Potion" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_WOLFSBANE_POTION">
+		<description>
+			<p>When a lycanthrope drinks this potion once a day for the entire week before the full moon, their alignment does not change and they are not placed under HM control during their transformation. If the drinker misses a single dose in the preceding week, the potion has no effect.</p>
+		</description>
+		<setters>
+			<set name="keywords">lycanthropy</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Wound Cleaning Potion" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_WOUND_CLEANING_POTION">
+		<description>
+			<p>When you apply this potion to open wounds, it stings, smokes and perfectly sterilizes the area. A bottle contains ten doses, and one dose stabilizes a creature that has 0 Hit Points, without needing to make a Wisdom (Medicine) check, and regains 8d4 + 8 hit points. </p>
+		</description>
+		<setters>
+			<set name="keywords">healing</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Antidote to Veritaserum" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_ANTIDOTE_TO_VERITASERUM">
+		<description>
+			<p>A creature subjected to this potion, for the next hour becomes immune to the effects of veritaserum, if the creature is already under the effects of veritaserum the effects are immediately removed</p>
+		</description>
+		<setters>
+			<set name="keywords">healing, truth</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Mandrake Restorative Draught" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_MANDRAKE_RESTORATIVE_DRAUGHT">
+		<description>
+			<p>When this healing potion is administered, it ends one of the following effects on the target:</p>
+			<ul>
+				<li>One effect that charmed, paralyzed or petrified the target.</li>
+				<li>One Transfiguration spell that's changed the target's form.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">healing</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Rat Tonic" type="Magic Item" source="Witchcraft and Wizardry" id="ID_WAW_MAGIC_ITEM_RAT_TONIC">
+		<description>
+			<p>When this healing potion is administered to a rodent,it stabilizes the creature if it has 0 Hit Points, without needing to make a Wisdom (Medicine) check.</p>
+		</description>
+		<setters>
+			<set name="keywords">healing</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<!-- Seventh Year Potions -->
 </elements>
