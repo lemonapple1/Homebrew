@@ -593,7 +593,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Pimple Jinx" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_PIMPLE_JINX">
+	<element name="Pimple Jinx (Furnunculus)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_FURNUNCULUS">
 		<supports>Caster</supports>
 		<description>
 			<p>Outbreaks of this jinx is a common occurrence when students get in fights, resulting in grotesque pimples covering the victims face. Make a ranged spell attack against a being within range. On a hit, it takes 1d4 psychic damage and has disadvantage on the next attack roll it makes before the end of its next turn. Additionally, it has disadvantage on the next Charisma ability check it makes.</p>
@@ -626,7 +626,7 @@
 			<set name="time">1 action</set>
 			<set name="duration">1 minute</set>
 			<set name="range">60 feet</set>
-			<set name="hasVerbalComponent">true</set>
+			<set name="hasVerbalComponent">false</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent"></set>
@@ -647,7 +647,7 @@
 			<set name="time">1 action</set>
 			<set name="duration">Instantaneous</set>
 			<set name="range">60 feet</set>
-			<set name="hasVerbalComponent">true</set>
+			<set name="hasVerbalComponent">false</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent"></set>
@@ -655,7 +655,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Jelly-Legs Jinx" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_JELLY_LEGS_JINX">
+	<element name="Jelly-Legs Curse (Locomotor Wibbly)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_LOCOMOTOR_WIBBLY">
 		<supports>Caster</supports>
 		<description>
 			<p>This will make a person's legs so unsteady and weak that they aren't able to keep their balance. Make a ranged spell attack against a being within range. On a hit, the target is knocked prone.</p>
@@ -896,7 +896,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Cheering Charm (Exhilaro)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_EXHILARO">
+	<element name="Cheering Charm" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_CHEERING_CHARM">
 		<supports>Caster</supports>
 		<description>
 			<p>A creature of your choice that you can see within range becomes quite cheerful. For the next 10 minutes, the target creature has advantage on any saving throw against becoming frightened.</p>
@@ -910,7 +910,7 @@
 			<set name="time">1 action</set>
 			<set name="duration">Concentration, up to 1 minute</set>
 			<set name="range">30 feet</set>
-			<set name="hasVerbalComponent">true</set>
+			<set name="hasVerbalComponent">false</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent" />
@@ -1213,7 +1213,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Locomotor Mortis" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_LOCOMOTOR_MORTIS">
+	<element name="Leg-Locker Curse (Locomotor Mortis)" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_LOCOMOTOR_MORTIS">
 		<supports>Caster</supports>
 		<description>
 			<p>A common tool among bullies, this "curse" binds a creature's legs as if they were tied together with rope. A creature you can see within range must succeed on a Wisdom saving throw or have its speed halved and suffer disadvantage on Dexterity saving throws. Additionally, each time it moves within the duration, it must succeed on a Dexterity saving throw without disadvantage from this spell, or be knocked prone and take 2d4 bludgeoning damage.</p>
