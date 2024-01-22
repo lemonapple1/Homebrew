@@ -552,7 +552,7 @@
 			<select type="Archetype" name="School of Magic" supports="School of Magic" level="18"/>
 		</rules>
 	</element>
-	<element name="School of Magic: Charms" type="Archetype" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_SCHOOL_OF_MAGIC_CHARMS">
+	<element name="Charms" type="Archetype" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_SCHOOL_OF_MAGIC_CHARMS">
 		<supports>School of Magic</supports>
 		<description>
 			<p>A non-lethal dueling master casting a spell for every situation and enchanting artifacts.</p>
@@ -562,7 +562,7 @@
 			<description>A non-lethal dueling master casting a spell for every situation and enchanting artifacts.</description>
 		</sheet>
 	</element>
-	<element name="School of Magic: Jinxes, Hexes and Curses" type="Archetype" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_SCHOOL_OF_MAGIC_JINX_HEX_CURSE">
+	<element name="Jinxes, Hexes and Curses" type="Archetype" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_SCHOOL_OF_MAGIC_JINX_HEX_CURSE">
 		<supports>School of Magic</supports>
 		<description>
 			<p>A combatant going toe-to-toe with Dark wizards and nullifying ancient curses and harmful magic.</p>
@@ -572,7 +572,7 @@
 			<description>A combatant going toe-to-toe with Dark wizards and nullifying ancient curses and harmful magic.</description>
 		</sheet>
 	</element>
-	<element name="School of Magic: Transfiguration" type="Archetype" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_SCHOOL_OF_MAGIC_TRANSFIGURATION">
+	<element name="Transfiguration" type="Archetype" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_SCHOOL_OF_MAGIC_TRANSFIGURATION">
 		<supports>School of Magic</supports>
 		<description>
 			<p>An innovator manipulating the elements or shapeshifting into an animal form.</p>
@@ -582,7 +582,7 @@
 			<description>An innovator manipulating the elements or shapeshifting into an animal form.</description>
 		</sheet>
 	</element>
-	<element name="School of Magic: Healing" type="Archetype" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_SCHOOL_OF_MAGIC_HEALING">
+	<element name="Healing" type="Archetype" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_SCHOOL_OF_MAGIC_HEALING">
 		<supports>School of Magic</supports>
 		<description>
 			<p>A skilled professional saving lives through the treatment of magical ailments and injuries.</p>
@@ -592,7 +592,7 @@
 			<description>A skilled professional saving lives through the treatment of magical ailments and injuries.</description>
 		</sheet>
 	</element>
-	<element name="School of Magic: Divination" type="Archetype" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_SCHOOL_OF_MAGIC_DIVINATION">
+	<element name="Divination" type="Archetype" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_SCHOOL_OF_MAGIC_DIVINATION">
 		<supports>School of Magic</supports>
 		<description>
 			<p>A mystic unraveling visions of the future or probing minds for the answers they seek.</p>
@@ -602,7 +602,7 @@
 			<description>A mystic unraveling visions of the future or probing minds for the answers they seek.</description>
 		</sheet>
 	</element>
-	<element name="School of Magic: Magizoology" type="Archetype" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_SCHOOL_OF_MAGIC_MAGIZOOLOGY">
+	<element name="Magizoology" type="Archetype" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_SCHOOL_OF_MAGIC_MAGIZOOLOGY">
 		<supports>School of Magic</supports>
 		<description>
 			<p>A researcher bonding with fearsome beasts and facing off with dark creatures.</p>
