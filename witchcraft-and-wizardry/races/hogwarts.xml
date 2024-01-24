@@ -35,7 +35,7 @@
 		<rules>
 			<stat name="constitution" value="1" />
 			<stat name="charisma" value="1" />
-			<select type="Ability Score Improvement" name="Ability Score Increase (Gryffindor)" supports="Ability Score Improvement, Gryffindor" number="1" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Gryffindor)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_INTELLIGENCE" />
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
@@ -90,7 +90,7 @@
 		<rules>
 			<stat name="constitution" value="1" />
 			<stat name="wisdom" value="1" />
-			<select type="Ability Score Improvement" name="Ability Score Increase (Hufflepuff)" supports="Ability Score Improvement, Hufflepuff" number="1" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Hufflepuff)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CHARISMA|ID_PHB_FEAT_ASI_INTELLIGENCE" />
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
@@ -145,7 +145,7 @@
 		<rules>
 			<stat name="intelligence" value="1" />
 			<stat name="wisdom" value="1" />
-			<select type="Ability Score Improvement" name="Ability Score Increase (Ravenclaw)" supports="Ability Score Improvement, Ravenclaw" number="1" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Ravenclaw)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CHARISMA" />
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
@@ -200,7 +200,7 @@
 		<rules>
 			<stat name="constitution" value="1" />
 			<stat name="wisdom" value="1" />
-			<select type="Ability Score Improvement" name="Ability Score Increase (Slytherin)" supports="Ability Score Improvement, Slytherin" number="1" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Slytherin)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" />
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
