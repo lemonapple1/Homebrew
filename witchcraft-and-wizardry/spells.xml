@@ -1434,6 +1434,32 @@
 	<!-- Spells -->
 	<!-- First Year Spells -->
 
+
+	<!-- Divination -->
+	<element name="Legilimens" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_LEGILIMENS">
+		<supports>Caster</supports>
+		<description>
+			<p>With legilimency, a being's eyes become windows to their mind, showing you a vision of their thoughts. For the duration, you can read the thoughts of a being you can see within range, as soon as eye contact can be made. After the spell effects begin, eye contact does not need to be maintained.</p>
+			<p class="indent">You initially learn the surface thoughts of the being - what is most on its mind in that moment. As an action, you can attempt to probe deeper into its mind. If you probe deeper, the target must make a Wisdom saving throw. If it fails, you gain insight into its reasoning (if any), its emotional state, and something that looms large in its mind (such as something it worries over, loves, or hates). If it succeeds, the spell ends. You can probe deeper a second time, forcefully pulling memories from the being's mind if it fails the second Wisdom saving throw.</p>
+			<p class="indent">Questions verbally directed at the target naturally shape the course of its thoughts, so this spell is particularly effective as part of an interrogation. If you cast the spell verbally and the target can hear you, it knows you are probing into its mind and the creature can use its action on its turn to make an Intelligence check contested by your Intelligence check. If it succeeds, the spell ends.</p>
+			<p class="indent"><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 4th level or higher, the DC of the Wisdom saving throws increases by 1 for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<!-- Divination -->
 	<!-- Apparition -->
 	<element name="Apparition" type="Spell" source="Witchcraft and Wizardry" id="ID_WAW_SPELL_APPARITION">
 		<supports>Caster</supports>

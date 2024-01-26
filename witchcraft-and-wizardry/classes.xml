@@ -552,6 +552,7 @@
 			<select type="Archetype" name="School of Magic" supports="School of Magic" level="18"/>
 		</rules>
 	</element>
+	<!-- Charms -->
 	<element name="Charms" type="Archetype" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_SCHOOL_OF_MAGIC_CHARMS">
 		<supports>School of Magic</supports>
 		<description>
@@ -561,17 +562,145 @@
 		<sheet display="false">
 			<description>A non-lethal dueling master casting a spell for every situation and enchanting artifacts.</description>
 		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WAW_ARCHETYPE_FEATURE_BEWITCHING_STUDIES" level="1" />
+			<grant type="Archetype Feature" id="ID_WAW_ARCHETYPE_FEATURE_ADVANCED_CHARMWORK" level="6" />
+		</rules>
 	</element>
+	<element name="Bewitching Studies" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_FEATURE_BEWITCHING_STUDIES">
+		<description>
+			<p>At 1st level, you gain one of the following features.</p>
+			<p class="indent"><strong><em>Called Shot.</em></strong> You've honed your aim to be able to strike very specifically with your dueling Charms. When casting a Charm, you can target specific items or body parts, as well as restrict the effects of the charm to only that specific item or body part.</p>
+			<p class="indent"><strong><em>Protective Enchantments.</em></strong> Any charm spell you cast that affects an area (cube, line, sphere, or cone) has its area's size doubled.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Bewitching Studies" supports="Bewitching Studies" />
+		</rules>
+	</element>
+	<element name="Called Shot" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_CALLED_SHOT">
+		<supports>Bewitching Studies</supports>
+		<description>
+			<p>You've honed your aim to be able to strike very specifically with your dueling Charms. When casting a Charm, you can target specific items or body parts, as well as restrict the effects of the charm to only that specific item or body part.</p>
+		</description>
+		<sheet>
+			<description>When casting a Charm, you can target specific items or body parts, as well as restrict the effects of the charm to only that specific item or body part.</description>
+		</sheet>
+	</element>
+	<element name="Protective Enchantments" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_PROTECTIVE_ENCHANTMENTS">
+		<supports>Bewitching Studies</supports>
+		<description>
+			<p>Any charm spell you cast that affects an area (cube, line, sphere, or cone) has its area's size doubled.</p>
+		</description>
+		<sheet>
+			<description>Any charm spell you cast that affects an area (cube, line, sphere, or cone) has its area's size doubled.</description>
+		</sheet>
+	</element>
+	<element name="Advanced Charmwork" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_FEATURE_ADVANCED_CHARMWORK">
+		<description>
+			<p>At 6th level, you gain one of the following features.</p>
+			<p class="indent"><strong><em>Target Practice.</em></strong> Your steady hand and hours of practice have given you an edge. Whenever you add your spellcasting ability modifier to a spell attack roll, add half your Dexterity modifier (rounded up) as a bonus as well.</p>
+			<p class="indent"><strong><em>Professional Charmer.</em></strong> You've learned to weave your enchantments throughout objects. If you cast a single target Charm with a duration longer than Instantaneous on an individual object, the effects have a permanent duration, if desired, until dispelled by you. This feature does not remove Concentration or Dedication requirements.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Advanced Charmwork" supports="Advanced Charmwork" />
+		</rules>
+	</element>
+	<element name="Target Practice" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_TARGET_PRACTICE">
+		<supports>Advanced Charmwork</supports>
+		<description>
+			<p>Your steady hand and hours of practice have given you an edge. Whenever you add your spellcasting ability modifier to a spell attack roll, add half your Dexterity modifier (rounded up) as a bonus as well.</p>
+		</description>
+		<sheet>
+			<description>Your steady hand and hours of practice have given you an edge. Whenever you add your spellcasting ability modifier to a spell attack roll, add half your Dexterity modifier (rounded up) as a bonus as well.</description>
+		</sheet>
+	</element>
+	<element name="Professional Charmer" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_PROFESSIONAL_CHARMER">
+		<supports>Advanced Charmwork</supports>
+		<description>
+			<p>You've learned to weave your enchantments throughout objects. If you cast a single target Charm with a duration longer than Instantaneous on an individual object, the effects have a permanent duration, if desired, until dispelled by you. This feature does not remove Concentration or Dedication requirements.</p>
+		</description>
+		<sheet>
+			<description>You've learned to weave your enchantments throughout objects. If you cast a single target Charm with a duration longer than Instantaneous on an individual object, the effects have a permanent duration, if desired, until dispelled by you. This feature does not remove Concentration or Dedication requirements.</description>
+		</sheet>
+	</element>
+	<!-- Charms -->
+	<!-- Jinxes, Hexes and Curses -->
 	<element name="Jinxes, Hexes and Curses" type="Archetype" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_SCHOOL_OF_MAGIC_JINX_HEX_CURSE">
 		<supports>School of Magic</supports>
 		<description>
 			<p>A combatant going toe-to-toe with Dark wizards and nullifying ancient curses and harmful magic.</p>
 			<p class="indent"><i>Suggested for Willpower Casters</i></p>
 		</description>
-		<sheet display="false">
-			<description>A combatant going toe-to-toe with Dark wizards and nullifying ancient curses and harmful magic.</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WAW_ARCHETYPE_FEATURE_PRACTICAL_STUDIES" level="1" />
+			<grant type="Archetype Feature" id="ID_WAW_ARCHETYPE_FEATURE_COMBAT_READY" level="6" />
+		</rules>
+	</element>
+	<element name="Practical Studies" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_FEATURE_PRACTICAL_STUDIES">
+		<description>
+			<p>At 1st level, you gain one of the following features.</p>
+			<p class="indent"><strong><em>Auror Training.</em></strong> You've already started practicing the required skills to become an Auror. You learn one common potion recipe and gain proficiency in two of the following: Investigation, Potion-Making, Stealth, Survival.</p>
+			<p class="indent"><strong><em>Curse-Breaking.</em></strong> Your curiosity in taking apart spells and enchantments has found an outlet. Gain a set of Curse-breakers' Tools and gain proficiency in Curse-breakers' Tools.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Practical Studies" supports="Practical Studies" />
+		</rules>
+	</element>
+	<element name="Auror Training" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_AUROR_TRAINING">
+		<supports>Practical Studies</supports>
+		<description>
+			<p>You've already started practicing the required skills to become an Auror. You learn one common potion recipe and gain proficiency in two of the following: Investigation, Potion-Making, Stealth, Survival.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Bonus Proficiencies (Auror Training)" supports="ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" number="2"/>
+		</rules>
+	</element>
+	<element name="Curse-Breaking" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_CURSE_BREAKING">
+		<supports>Practical Studies</supports>
+		<description>
+			<p>Your curiosity in taking apart spells and enchantments has found an outlet. Gain a set of Curse-breakers' Tools and gain proficiency in Curse-breakers' Tools.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_WAW_PROFICIENCY_TOOL_CURSE_BREAKERS_TOOLS" />
+		</rules>
+	</element>
+	<element name="Combat Ready" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_FEATURE_COMBAT_READY">
+		<description>
+			<p>At 6th level, you gain one of the following features.</p>
+			<p class="indent"><strong><em>Forceful Magic.</em></strong> You cast every spell as if it were life-or-death. When you cast a spell that deals damage, add 1d6 to one damage roll.</p>
+			<p class="indent"><strong><em>Magical Adrenaline.</em></strong> Your magic invigorates you in times of dire need. As a bonus action, you can spend one hit die to recover hit points as you normally would after a short rest, equal to hit die + Constitution modifier. You have a number of uses equal to your proficiency bonus, and all uses are restored after a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Combat Ready" supports="Combat Ready" />
+		</rules>
+	</element>
+	<element name="Forceful Magic" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_FORCEFUL_MAGIC">
+		<supports>Combat Ready</supports>
+		<description>
+			<p>You cast every spell as if it were life-or-death. When you cast a spell that deals damage, add 1d6 to one damage roll.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that deals damage, add 1d6 to one damage roll.</description>
 		</sheet>
 	</element>
+	<element name="Magical Adrenaline" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_MAGICAL_ADRENALINE">
+		<supports>Combat Ready</supports>
+		<description>
+			<p>Your magic invigorates you in times of dire need. As a bonus action, you can spend one hit die to recover hit points as you normally would after a short rest, equal to hit die + Constitution modifier. You have a number of uses equal to your proficiency bonus, and all uses are restored after a long rest.</p>
+		</description>
+		<sheet>
+			<description>As a bonus action, you can spend one hit die to recover hit points as you normally would after a short rest, equal to hit die + Constitution modifier. You have a number of uses equal to your proficiency bonus, and all uses are restored after a long rest.</description>
+		</sheet>
+	</element>
+	<!-- Jinxes, Hexes and Curses -->
+	<!-- Transfiguration -->
 	<element name="Transfiguration" type="Archetype" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_SCHOOL_OF_MAGIC_TRANSFIGURATION">
 		<supports>School of Magic</supports>
 		<description>
@@ -581,7 +710,71 @@
 		<sheet display="false">
 			<description>An innovator manipulating the elements or shapeshifting into an animal form.</description>
 		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WAW_ARCHETYPE_FEATURE_SCIENTIFIC_STUDIES" level="1" />
+			<grant type="Archetype Feature" id="ID_WAW_ARCHETYPE_FEATURE_TRANSFIGURATION_PRODIGY" level="6" />
+		</rules>
 	</element>
+	<element name="Scientific Studies" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_FEATURE_SCIENTIFIC_STUDIES">
+		<description>
+			<p>At 1st level, you gain one of the following features.</p>
+			<p class="indent"><strong><em>Anatomy Textbook.</em></strong> Your knowledge of the inner workings of a creature make your transfigurations easier. If a Transfiguration spell must be cast at a higher level to involve a living creature, you can involve a living creature and consume a spell slot one level lower than what's required.</p>
+			<p class="indent"><strong><em>Intuitive Conversion.</em></strong> Conceptualizing a transfiguration just comes easily to you. When you cast vera verto, it automatically affects targets one size larger than specified by the spell slot level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Scientific Studies" supports="Scientific Studies" />
+		</rules>
+	</element>
+	<element name="Anatomy Textbook" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_ANATOMY_TEXTBOOK">
+		<supports>Scientific Studies</supports>
+		<description>
+			<p>Your knowledge of the inner workings of a creature make your transfigurations easier. If a Transfiguration spell must be cast at a higher level to involve a living creature, you can involve a living creature and consume a spell slot one level lower than what's required.</p>
+		</description>
+		<sheet>
+			<description>If a Transfiguration spell must be cast at a higher level to involve a living creature, you can involve a living creature and consume a spell slot one level lower than what's required.</description>
+		</sheet>
+	</element>
+	<element name="Intuitive Conversion" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_INTUITIVE_CONVERSION">
+		<supports>Scientific Studies</supports>
+		<description>
+			<p>Conceptualizing a transfiguration just comes easily to you. When you cast vera verto, it automatically affects targets one size larger than specified by the spell slot level.</p>
+		</description>
+		<sheet>
+			<description>Conceptualizing a transfiguration just comes easily to you. When you cast vera verto, it automatically affects targets one size larger than specified by the spell slot level.</description>
+		</sheet>
+	</element>
+	<element name="Transfiguration Prodigy" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_FEATURE_TRANSFIGURATION_PRODIGY">
+		<description>
+			<p>At 6th level, you gain one of the following features.</p>
+			<p class="indent"><strong><em>Animagus Transformation.</em></strong> You can use your action to magically assume the shape of your animagus form. You can use this feature twice. You regain expended uses when you finish a short or long rest.</p>
+			<p class="indent"><strong><em>Elementalist.</em></strong> Your study of Alchemy has given you insights in the nature of elements. Any spell that involves only fire, water, earth, or air is automatically cast one level higher than the consumed spell slot, not exceeding the highest available level of spell slots you have.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Transfiguration Prodigy" supports="Transfiguration Prodigy" />
+		</rules>
+	</element>
+	<element name="Animagus Transformation" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_ANIMAGUS_TRANSFORMATION">
+		<supports>Transfiguration Prodigy</supports>
+		<description>
+			<p>You can use your action to magically assume the shape of your animagus form. You can use this feature twice. You regain expended uses when you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>You can use your action to magically assume the shape of your animagus form. You can use this feature twice. You regain expended uses when you finish a short or long rest.</description>
+		</sheet>
+	</element>
+	<element name="Elementalist" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_ELEMENTALIST">
+		<supports>Transfiguration Prodigy</supports>
+		<description>
+			<p>Your study of Alchemy has given you insights in the nature of elements. Any spell that involves only fire, water, earth, or air is automatically cast one level higher than the consumed spell slot, not exceeding the highest available level of spell slots you have.</p>
+		</description>
+		<sheet>
+			<description>Any spell that involves only fire, water, earth, or air is automatically cast one level higher than the consumed spell slot, not exceeding the highest available level of spell slots you have.</description>
+		</sheet>
+	</element>
+	<!-- Transfiguration -->
+	<!-- Healing -->
 	<element name="Healing" type="Archetype" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_SCHOOL_OF_MAGIC_HEALING">
 		<supports>School of Magic</supports>
 		<description>
@@ -591,7 +784,72 @@
 		<sheet display="false">
 			<description>A skilled professional saving lives through the treatment of magical ailments and injuries.</description>
 		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WAW_ARCHETYPE_FEATURE_MEDICAL_STUDIES" level="1" />
+			<grant type="Archetype Feature" id="ID_WAW_ARCHETYPE_FEATURE_DEDICATED_PROTECTOR" level="6" />
+		</rules>
 	</element>
+	<element name="Medical Studies" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_FEATURE_MEDICAL_STUDIES">
+		<description>
+			<p>At 1st level, you gain one of the following features.</p>
+			<p class="indent"><strong><em>Natural Remedies.</em></strong> Your knowledge of the inner workings of a creature make your transfigurations easier. If a Transfiguration spell must be cast at a higher level to involve a living creature, you can involve a living creature and consume a spell slot one level lower than what's required.</p>
+			<p class="indent"><strong><em>Intuitive Conversion.</em></strong> Conceptualizing a transfiguration just comes easily to you. When you cast vera verto, it automatically affects targets one size larger than specified by the spell slot level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Medical Studies" supports="Medical Studies" />
+		</rules>
+	</element>
+	<element name="Natural Remedies" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_NATURAL_REMEDIES">
+		<supports>Medical Studies</supports>
+		<description>
+			<p>Your interest in healing has led you to study potions and poultices. You learn the recipe for star grass salve and gain proficiency in one of the following skills: Herbology, Medicine, Potion-Making.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Bonus Proficiencies (Natural Remedies)" supports="ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_RELIGION"/>
+		</rules>
+	</element>
+	<element name="Unshakable Nerves" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_UNSHAKABLE_NERVES">
+		<supports>Medical Studies</supports>
+		<description>
+			<p>Your study of injuries and magical diseases have given you a strong stomach and iron will. You have advantage on saving throws against being frightened.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being frightened.</description>
+		</sheet>
+	</element>
+	<element name="Dedicated Protector" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_FEATURE_DEDICATED_PROTECTOR">
+		<description>
+			<p>At 6th level, you gain one of the following features.</p>
+			<p class="indent"><strong><em>Accelerated Recovery.</em></strong> You can use your action to magically assume the shape of your animagus form. You can use this feature twice. You regain expended uses when you finish a short or long rest.</p>
+			<p class="indent"><strong><em>Elementalist.</em></strong> Your study of Alchemy has given you insights in the nature of elements. Any spell that involves only fire, water, earth, or air is automatically cast one level higher than the consumed spell slot, not exceeding the highest available level of spell slots you have.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Dedicated Protector" supports="Dedicated Protector" />
+		</rules>
+	</element>
+	<element name="Accelerated Recovery" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_ACCELERATED_RECOVERY">
+		<supports>Dedicated Protector</supports>
+		<description>
+			<p>Your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell’s level.</p>
+		</description>
+		<sheet>
+			<description>Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell’s level.</description>
+		</sheet>
+	</element>
+	<element name="Durable Shielding" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_DURABLE_SHIELDING">
+		<supports>Dedicated Protector</supports>
+		<description>
+			<p>Your shield spells are more effective. Whenever you use a defensive spell of 1st level or higher that improves a creature’s AC or grants temporary hit points, the creature gains additional temporary hit points equal to 2 + the spell’s level, which last the duration of the spell's effect.</p>
+		</description>
+		<sheet>
+			<description>Whenever you use a defensive spell of 1st level or higher that improves a creature’s AC or grants temporary hit points, the creature gains additional temporary hit points equal to 2 + the spell’s level, which last the duration of the spell's effect.</description>
+		</sheet>
+	</element>
+	<!-- Healing -->
+	<!-- Divination -->
 	<element name="Divination" type="Archetype" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_SCHOOL_OF_MAGIC_DIVINATION">
 		<supports>School of Magic</supports>
 		<description>
@@ -601,7 +859,77 @@
 		<sheet display="false">
 			<description>A mystic unraveling visions of the future or probing minds for the answers they seek.</description>
 		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WAW_ARCHETYPE_FEATURE_CLAIRVOYANT_STUDIES" level="1" />
+			<grant type="Archetype Feature" id="ID_WAW_ARCHETYPE_FEATURE_FARSEEING" level="6" />
+		</rules>
 	</element>
+	<element name="Clairvoyant Studies" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_FEATURE_CLAIRVOYANT_STUDIES">
+		<description>
+			<p>At 1st level, you gain one of the following features.</p>
+			<p class="indent"><strong><em>Fortune Teller.</em></strong> You've particularly taken to astronomy, tasseography, and crystal gazing. You gain a Diviner's Kit and proficiency in using a Diviner's Kit.</p>
+			<p class="indent"><strong><em>Sensing Danger.</em></strong> You add half your proficiency bonus to your Initiative and cannot be surprised while conscious.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Clairvoyant Studies" supports="Clairvoyant Studies" />
+		</rules>
+	</element>
+	<element name="Fortune Teller" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_FORTUNE_TELLER">
+		<supports>Clairvoyant Studies</supports>
+		<description>
+			<p>You've particularly taken to astronomy, tasseography, and crystal gazing. You gain a Diviner's Kit and proficiency in using a Diviner's Kit.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_WAW_PROFICIENCY_TOOL_DIVINERS_KIT" />
+		</rules>
+	</element>
+	<element name="Sensing Danger" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_SENSING_DANGER">
+		<supports>Clairvoyant Studies</supports>
+		<description>
+			<p>You add half your proficiency bonus to your Initiative and cannot be surprised while conscious.</p>
+		</description>
+		<sheet>
+			<description>You add half your proficiency bonus to your Initiative and cannot be surprised while conscious.</description>
+		</sheet>
+	</element>
+	<element name="Farseeing" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_FEATURE_FARSEEING">
+		<description>
+			<p>At 6th level, you gain one of the following features.</p>
+			<p class="indent"><strong><em>Foresight.</em></strong> You start to see omens everywhere you look. After a long rest, roll two d20s and record those rolls as your two foresight rolls.</p>
+			<p class="indent">When you or a creature you can see is about to make an attack roll, saving throw, or ability check, you can expend one of your foresight rolls to use that number, once per turn. After a long rest, you lose and reroll your foresight rolls. At level 10, you gain another foresight roll, for a total of 3.</p>
+			<p class="indent"><strong><em>Legilimency.</em></strong> You add the legilimens spell to your list of known spells. It does not count against your number of spells known, and cannot be forgotten to learn another spell.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Farseeing" supports="Farseeing" />
+		</rules>
+	</element>
+	<element name="Foresight" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_FORESIGHT">
+		<supports>Farseeing</supports>
+		<description>
+			<p>You start to see omens everywhere you look. After a long rest, roll two d20s and record those rolls as your two foresight rolls.</p>
+			<p class="indent">When you or a creature you can see is about to make an attack roll, saving throw, or ability check, you can expend one of your foresight rolls to use that number, once per turn. After a long rest, you lose and reroll your foresight rolls. At level 10, you gain another foresight roll, for a total of 3.</p>
+		</description>
+		<sheet>
+			<description>After a long rest, roll two d20s and record those rolls as your two foresight rolls. When you or a creature you can see is about to make an attack roll, saving throw, or ability check, you can expend one of your foresight rolls to use that number, once per turn. After a long rest, you lose and reroll your foresight rolls. At level 10, you gain another foresight roll, for a total of 3.</description>
+		</sheet>
+	</element>
+	<element name="Legilimency" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_LEGILIMENCY">
+		<supports>Farseeing</supports>
+		<description>
+			<p>You add the legilimens spell to your list of known spells. It does not count against your number of spells known, and cannot be forgotten to learn another spell.</p>
+		</description>
+		<sheet>
+			<description>You add the legilimens spell to your list of known spells. It does not count against your number of spells known, and cannot be forgotten to learn another spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WAW_SPELL_LEGILIMENS" spellcasting="Caster"/>
+		</rules>
+	</element>
+	<!-- Divination -->
+	<!-- Magizoology -->
 	<element name="Magizoology" type="Archetype" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_SCHOOL_OF_MAGIC_MAGIZOOLOGY">
 		<supports>School of Magic</supports>
 		<description>
@@ -611,8 +939,69 @@
 		<sheet display="false">
 			<description>A researcher bonding with fearsome beasts and facing off with dark creatures.</description>
 		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WAW_ARCHETYPE_FEATURE_BIOLOGICAL_STUDIES" level="1" />
+			<grant type="Archetype Feature" id="ID_WAW_ARCHETYPE_FEATURE_WAY_OF_THE_WILD" level="6" />
+		</rules>
+	</element><element name="Biological Studies" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_FEATURE_BIOLOGICAL_STUDIES">
+		<description>
+			<p>At 1st level, you gain one of the following features.</p>
+			<p class="indent"><strong><em>Caretaker.</em></strong> Your study of magical creatures has taught you about their injuries and physiologies. You can cast any known Healing spells on beasts.</p>
+			<p class="indent"><strong><em>Sensing Danger.</em></strong> You add half your proficiency bonus to your Initiative and cannot be surprised while conscious.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Biological Studies" supports="Biological Studies" />
+		</rules>
 	</element>
-
+	<element name="Caretaker" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_CARETAKER">
+		<supports>Biological Studies</supports>
+		<description>
+			<p>Your study of magical creatures has taught you about their injuries and physiologies. You can cast any known Healing spells on beasts.</p>
+		</description>
+		<sheet>
+			<description>You can cast any known Healing spells on beasts.</description>
+		</sheet>
+	</element>
+	<element name="Folio Bruti" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_FOLIO_BRUTI">
+		<supports>Biological Studies</supports>
+		<description>
+			<p>You have your own personal notebook of beasts where you record your findings. Whenever you add Magical Creatures proficiency to an Ability check, add your Intelligence modifier as a bonus as well.</p>
+		</description>
+		<sheet>
+			<description>Whenever you add Magical Creatures proficiency to an Ability check, add your Intelligence modifier as a bonus as well.</description>
+		</sheet>
+	</element>
+	<element name="Way of the Wild" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPE_FEATURE_WAY_OF_THE_WILD">
+		<description>
+			<p>At 6th level, you gain one of the following features.</p>
+			<p class="indent"><strong><em>Wizard's Best Friend.</em></strong> Your care and compassion towards creatures earns you their trust and respect. You can have a beast companion.</p>
+			<p class="indent"><strong><em>Prepared Ambush.</em></strong> In learning to combat dangerous targets, you know how to place a magical trap, waiting to be sprung. When you cast a spell that targets a single creature or area using a spell slot of 1st level or higher, you can weave that spell into your surroundings, having no immediate effect. The spell is cast when it is triggered by something, which you decide at the time of setting the trap, such as entering an area, getting within a certain distance, or manipulating an object. You can also set conditions for creatures that don't trigger the spell, such as specific people or those who say a certain password.</p>
+			<p class="indent">Using this ability expends a spell slot two levels higher than the intended spell. For example, to set a 1st level spell as a magical trap, you must expend a 3rd level spell slot.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Way of the Wild" supports="Way of the Wild" />
+		</rules>
+	</element>
+	<element name="Wizard's Best Friend" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_WIZARDS_BEST_FRIEND">
+		<supports>Way of the Wild</supports>
+		<description>
+			<p>Your care and compassion towards creatures earns you their trust and respect. You can have a beast companion.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Prepared Ambush" type="Archetype Feature" source="Witchcraft and Wizardry" id="ID_WAW_ARCHETYPEFEATURE_PREPARED_AMBUSH">
+		<supports>Way of the Wild</supports>
+		<description>
+			<p>In learning to combat dangerous targets, you know how to place a magical trap, waiting to be sprung. When you cast a spell that targets a single creature or area using a spell slot of 1st level or higher, you can weave that spell into your surroundings, having no immediate effect. The spell is cast when it is triggered by something, which you decide at the time of setting the trap, such as entering an area, getting within a certain distance, or manipulating an object. You can also set conditions for creatures that don't trigger the spell, such as specific people or those who say a certain password.</p>
+			<p class="indent">Using this ability expends a spell slot two levels higher than the intended spell. For example, to set a 1st level spell as a magical trap, you must expend a 3rd level spell slot. If the spell requires a target, the spell can only target one triggering creature, or if it affects an area, the spell's area of effect is centered on the triggering creature. If the spell conjures hostile creatures, they appear as close as possible to the triggering creature and attack. If the spell requires concentration, it lasts its full duration. A trap can be detected by a successful Intelligence (Investigation) check against your spell save DC, or by casting specialis revelio.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that targets a single creature or area using a spell slot of 1st level or higher, you can weave that spell into your surroundings, having no immediate effect. The spell is cast when it is triggered by something, which you decide at the time of setting the trap. You can also set conditions for creatures that don't trigger the spell. Using this ability expends a spell slot two levels higher than the intended spell. If the spell requires a target, the spell can only target one triggering creature, or if it affects an area, the spell's area of effect is centered on the triggering creature. If the spell conjures hostile creatures, they appear as close as possible to the triggering creature and attack. If the spell requires concentration, it lasts its full duration. A trap can be detected by a successful Investigation check against your spell save DC, or by casting specialis revelio.</description>
+		</sheet>
+	</element>
+	<!-- Magizoology -->
 	<element name="Apparition Lessons" type="Class Feature" source="Witchcraft and Wizardry" id="ID_WAW_CLASS_FEATURE_CASTER_APPARITION_LESSONS">
 		<description>
 			<p>You have taken lessons and have learnt how to apparate.</p>
